@@ -1,0 +1,25 @@
+{
+  "name": "pandas-lab",
+  "version": "1.0.0",
+  "description": "판다스 실습실 — 설치 없이 브라우저에서 판다스 명령을 실행하며 배우는 실습실 (빅데이터분석기사 작업형1 미션·치트시트 포함)",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "티쳐무",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "node tools/make-cheatsheet.mjs && vite build && node tools/check-dist.mjs",
+    "preview": "vite preview",
+    "test": "node test/run.mjs",
+    "check:syntax": "node tools/check-syntax.mjs",
+    "scenarios": "node tools/scenarios.mjs",
+    "cheatsheet": "node tools/make-cheatsheet.mjs",
+    "pdf": "node tools/make-cheatsheet.mjs --pdf",
+    "data": "python tools/make_data.py"
+  },
+  "devDependencies": {
+    "vite": "^8.2.2",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}

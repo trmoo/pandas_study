@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.venv/
+.dev-out/
+*.log
+# 원본 강의 자료가 섞여 들어오지 않게 — 우리가 만든 치트시트 PDF 만 통과
+*.pptx
+*.ipynb
+*.hwp
+*.pdf
+!docs/판다스_치트시트.pdf

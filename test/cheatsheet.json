@@ -1,0 +1,350 @@
+[
+ {
+  "sec": "0. 시작 · 파일",
+  "c": "import pandas as pd\nimport numpy as np"
+ },
+ {
+  "sec": "0. 시작 · 파일",
+  "c": "df = pd.read_csv('menu.csv')"
+ },
+ {
+  "sec": "0. 시작 · 파일",
+  "c": "pd.read_csv('menu.csv', index_col=0)"
+ },
+ {
+  "sec": "0. 시작 · 파일",
+  "c": "pd.read_csv('orders.csv', parse_dates=['날짜'])"
+ },
+ {
+  "sec": "0. 시작 · 파일",
+  "c": "df.to_csv('result.csv', index=False)"
+ },
+ {
+  "sec": "0. 시작 · 파일",
+  "c": "pd.DataFrame({'메뉴': ['김밥', '라면'], '가격': [3500, 4000]})"
+ },
+ {
+  "sec": "0. 시작 · 파일",
+  "c": "pd.Series([3500, 4000], index=['김밥', '라면'])"
+ },
+ {
+  "sec": "1. 첫 확인 (EDA)",
+  "c": "df.shape"
+ },
+ {
+  "sec": "1. 첫 확인 (EDA)",
+  "c": "df.info()"
+ },
+ {
+  "sec": "1. 첫 확인 (EDA)",
+  "c": "df.describe()"
+ },
+ {
+  "sec": "1. 첫 확인 (EDA)",
+  "c": "df.describe(include='object')"
+ },
+ {
+  "sec": "1. 첫 확인 (EDA)",
+  "c": "df['분류'].value_counts()"
+ },
+ {
+  "sec": "1. 첫 확인 (EDA)",
+  "c": "df['분류'].value_counts(normalize=True)"
+ },
+ {
+  "sec": "1. 첫 확인 (EDA)",
+  "c": "df.corr(numeric_only=True)"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "df.loc[1:3, '메뉴':'가격']"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "df.iloc[1:3, 0:2]"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "df.loc[df['가격'] > 5000, '메뉴']"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "cond = (df['가격'] >= 4000) & (df['매운맛'] > 0)\ndf[cond]"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "df[df['분류'].isin(['음료', '디저트'])]"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "df[df['가격'].between(3000, 5000)]"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "df[df['메뉴'].str.contains('김밥', na=False)]"
+ },
+ {
+  "sec": "2. 고르기",
+  "c": "i = df['판매량'].idxmax()\ndf.loc[i, '메뉴']"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "df['가격'].mean()  # median std var sum min max count"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "df['가격'].quantile(0.25)"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "df['분류'].mode()[0]"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "(df['가격'] > 5000).sum()"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "(df['가격'] > 5000).mean()"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "df.nlargest(3, '판매량')"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "df.sum(numeric_only=True)"
+ },
+ {
+  "sec": "3. 통계 · 개수",
+  "c": "df['가격'].cumsum()"
+ },
+ {
+  "sec": "4. 정렬",
+  "c": "df.sort_values('판매량', ascending=False)"
+ },
+ {
+  "sec": "4. 정렬",
+  "c": "df.sort_values(['분류', '가격'], ascending=[True, False])"
+ },
+ {
+  "sec": "4. 정렬",
+  "c": "df = df.sort_values('칼로리').reset_index(drop=True)"
+ },
+ {
+  "sec": "4. 정렬",
+  "c": "df.sort_index()"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "df['매출'] = df['가격'] * df['판매량']"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "df.rename(columns={'가격': '판매가'})"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "df['가격'].astype(float)"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "df['분류'].replace('식사', '밥')"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "df['분류'].map({'분식': 1, '식사': 2, '음료': 3, '디저트': 4})"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "df['칼로리'].apply(lambda x: '높음' if x >= 500 else '낮음')"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "np.where(df['칼로리'] >= 500, '높음', '낮음')"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "df.loc[df['분류'] == '음료', '가격'] = 1800"
+ },
+ {
+  "sec": "5. 바꾸기 · 만들기",
+  "c": "pd.cut(df['가격'], bins=[0, 3000, 6000, 9000], labels=['싸다', '보통', '비싸다'])"
+ },
+ {
+  "sec": "6. 결측치 · 중복",
+  "c": "raw.isnull().sum()"
+ },
+ {
+  "sec": "6. 결측치 · 중복",
+  "c": "raw.dropna(subset=['가격'])"
+ },
+ {
+  "sec": "6. 결측치 · 중복",
+  "c": "raw['칼로리'].fillna(raw['칼로리'].median())"
+ },
+ {
+  "sec": "6. 결측치 · 중복",
+  "c": "raw['원산지'].fillna(raw['원산지'].mode()[0])"
+ },
+ {
+  "sec": "6. 결측치 · 중복",
+  "c": "raw['칼로리'].fillna(raw.groupby('분류')['칼로리'].transform('mean'))"
+ },
+ {
+  "sec": "6. 결측치 · 중복",
+  "c": "raw['칼로리'].ffill()"
+ },
+ {
+  "sec": "6. 결측치 · 중복",
+  "c": "pd.to_numeric(raw['맵기'], errors='coerce')"
+ },
+ {
+  "sec": "7. 문자열 (.str)",
+  "c": "df['메뉴'].str.replace('떡볶이', '떡')"
+ },
+ {
+  "sec": "7. 문자열 (.str)",
+  "c": "df['메뉴'].str.contains('김밥')"
+ },
+ {
+  "sec": "7. 문자열 (.str)",
+  "c": "o['시각'].str.split(':').str[0]"
+ },
+ {
+  "sec": "7. 문자열 (.str)",
+  "c": "df['메뉴'].str[0:2]"
+ },
+ {
+  "sec": "7. 문자열 (.str)",
+  "c": "df['메뉴'].str.len()"
+ },
+ {
+  "sec": "7. 문자열 (.str)",
+  "c": "df['메뉴'].str.strip().str.lower()"
+ },
+ {
+  "sec": "7. 문자열 (.str)",
+  "c": "df['메뉴'].str.startswith('치즈')"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "o['날짜'] = pd.to_datetime(o['날짜'])"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "pd.to_datetime(o['날짜']).dt.month"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "pd.to_datetime(o['날짜']).dt.dayofweek"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "pd.to_datetime(o['날짜']).dt.day_name()"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "o[pd.to_datetime(o['날짜']) >= '2025-03-07']"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "pd.to_datetime('2025년03월07일', format='%Y년%m월%d일')"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "pd.to_datetime('2025-03-07') + pd.Timedelta(days=99)"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "t = pd.to_datetime(o['날짜'] + ' ' + o['시각'])\n(t - t.min()).dt.days"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "t = pd.to_datetime(o['날짜'] + ' ' + o['시각'])\n(t - t.min()).dt.total_seconds() / 60"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "pd.to_datetime(o['날짜']).dt.to_period('M')"
+ },
+ {
+  "sec": "8. 날짜 · 시계열 (.dt)",
+  "c": "print(round(2.5), round(3.5))"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "df.groupby('분류')['가격'].mean()"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "df.groupby('분류').size()"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "df.groupby('분류')['가격'].agg(['mean', 'max'])"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "df.groupby('분류').agg({'가격': 'mean', '판매량': 'sum'})"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "df.groupby(['분류', '매운맛'])['판매량'].sum().reset_index()"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "df.groupby('분류')['가격'].mean().idxmax()"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "o.pivot_table(index='날짜', columns='결제', values='수량', aggfunc='sum', fill_value=0)"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "o.groupby(['날짜', '결제'])['수량'].sum().unstack()"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "pd.melt(df, id_vars=['메뉴'], value_vars=['가격', '칼로리'], var_name='항목', value_name='값')"
+ },
+ {
+  "sec": "9. 묶기 · 피벗",
+  "c": "pd.crosstab(o['날짜'], o['결제'])"
+ },
+ {
+  "sec": "10. 합치기",
+  "c": "pd.concat([df.head(2), df.tail(2)], ignore_index=True)"
+ },
+ {
+  "sec": "10. 합치기",
+  "c": "pd.concat([df[['메뉴']], df[['가격']]], axis=1)"
+ },
+ {
+  "sec": "10. 합치기",
+  "c": "pd.merge(o, df[['메뉴', '가격']], on='메뉴', how='left')"
+ },
+ {
+  "sec": "11. 작업형1 단골 꼴",
+  "c": "s = df['판매량'].sort_values(ascending=False)\ndf.loc[s.index[:3], '판매량'] = s.iloc[2]\nprint(df['판매량'].mean())"
+ },
+ {
+  "sec": "11. 작업형1 단골 꼴",
+  "c": "q1, q3 = df['가격'].quantile([0.25, 0.75])\niqr = q3 - q1\nprint(((df['가격'] < q1 - 1.5 * iqr) | (df['가격'] > q3 + 1.5 * iqr)).sum())"
+ },
+ {
+  "sec": "11. 작업형1 단골 꼴",
+  "c": "x = df['가격']\nprint(((x - x.min()) / (x.max() - x.min()) > 0.5).sum())"
+ },
+ {
+  "sec": "11. 작업형1 단골 꼴",
+  "c": "x = df['가격']\nprint(((x - x.mean()) / x.std()).max())"
+ },
+ {
+  "sec": "11. 작업형1 단골 꼴",
+  "c": "b = raw['칼로리'].std()\na = raw['칼로리'].fillna(raw['칼로리'].median()).std()\nprint(round(b - a, 2))"
+ },
+ {
+  "sec": "11. 작업형1 단골 꼴",
+  "c": "print(int(df['가격'].mean()))  # 버림\nprint(round(df['가격'].mean(), 2))  # 반올림"
+ }
+]

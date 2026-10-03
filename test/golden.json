@@ -1,0 +1,4684 @@
+{
+ "lesson:series": [
+  {
+   "stdout": "",
+   "display": "'2.2.2'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    3500\n1    4000\n2    4500\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "김밥     3500\n라면     4000\n떡볶이    4500\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(4000)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "김밥     3500\n떡볶이    4500\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "김밥     320\n라면     500\n떡볶이    480\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "라면     4000\n떡볶이    4500\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "김밥     7000\n라면     8000\n떡볶이    9000\ndtype: int64\n",
+   "display": "np.float64(4000.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    1.0\n1    3.0\n2    NaN\n3    6.0\ndtype: float64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:frame": [
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  분류\n0   김밥  3500  분식\n1   라면  4000  식사\n2  떡볶이  4500  분식",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   메뉴    가격\n0  어묵  1000\n1  튀김  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     김밥\n1     라면\n2    떡볶이\nName: 메뉴, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴\n0   김밥\n1   라면\n2  떡볶이",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "snack          : <class 'pandas.core.frame.DataFrame'>\nsnack['가격']   : <class 'pandas.core.series.Series'>\nsnack[['가격']] : <class 'pandas.core.frame.DataFrame'>\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0   김밥  3500\n1   라면  4000\n2  떡볶이  4500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(3, 3)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "TypeError",
+    "'tuple' object is not callable"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "Index(['메뉴', '가격', '분류'], dtype='object')\nRangeIndex(start=0, stop=3, step=1)\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     1학기  2학기\n코딩반   12   15\n로봇반    8    9",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:csv": [
+  {
+   "stdout": ",메뉴,가격\r\n0,어묵,1000\r\n1,튀김,2000\r\n2,순대,4000\r\n\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   Unnamed: 0  메뉴    가격\n0           0  어묵  1000\n1           1  튀김  2000\n2           2  순대  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   메뉴    가격\n0  어묵  1000\n1  튀김  2000\n2  순대  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   메뉴    가격\n0  어묵  1000\n1  튀김  2000\n2  순대  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n0     떡볶이   분식  4500  480    2  132\n1   치즈떡볶이   분식  5500  610    1   88\n2     라볶이   분식  6000  650    2   64\n3      김밥   분식  3500  320    0  150\n4    참치김밥   분식  4500  410    0   97\n5      순대   분식  4000  390    0   71\n6      라면   식사  4000  500    1  120\n7     돈가스   식사  8500  890    0   55\n8    제육덮밥   식사  8000  780    3   60\n9     쿨피스   음료  1500  140    0   45\n10     식혜   음료  2000  150    0   38\n11    붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:first": [
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64\n3     김밥  분식  3500  320    0  150\n4   참치김밥  분식  4500  410    0   97",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류    가격  칼로리  매운맛  판매량\n9   쿨피스   음료  1500  140    0   45\n10   식혜   음료  2000  150    0   38\n11  붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(12, 6)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "Index(['메뉴', '분류', '가격', '칼로리', '매운맛', '판매량'], dtype='object')\n메뉴     object\n분류     object\n가격      int64\n칼로리     int64\n매운맛     int64\n판매량     int64\ndtype: object\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 12 entries, 0 to 11\nData columns (total 6 columns):\n #   Column  Non-Null Count  Dtype \n---  ------  --------------  ----- \n 0   메뉴      12 non-null     object\n 1   분류      12 non-null     object\n 2   가격      12 non-null     int64 \n 3   칼로리     12 non-null     int64 \n 4   매운맛     12 non-null     int64 \n 5   판매량     12 non-null     int64 \ndtypes: int64(4), object(2)\nmemory usage: 708.0+ bytes\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(12, 2)",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:stats": [
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "                가격         칼로리       매운맛         판매량\ncount    12.000000   12.000000  12.00000   12.000000\nmean   4500.000000  462.500000   0.75000   83.333333\nstd    2225.880827  238.599131   1.05529   35.387038\nmin    1500.000000  140.000000   0.00000   38.000000\n25%    3125.000000  297.500000   0.00000   58.750000\n50%    4250.000000  445.000000   0.00000   75.500000\n75%    5625.000000  620.000000   1.25000  102.750000\nmax    8500.000000  890.000000   3.00000  150.000000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "         메뉴  분류\ncount    12  12\nunique   12   4\ntop     떡볶이  분식\nfreq      1   6",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "평균  : 4500.0\n중앙값: 4250.0\n최댓값: 8500\n합계  : 1000\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "3125.0 5625.0\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "2225.8808266718715\n2131.118642090737\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "           가격       칼로리       매운맛       판매량\n가격   1.000000  0.982536  0.541828 -0.070980\n칼로리  0.982536  1.000000  0.558724 -0.024226\n매운맛  0.541828  0.558724  1.000000  0.073032\n판매량 -0.070980 -0.024226  0.073032  1.000000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "could not convert string to float: '떡볶이'"
+   ],
+   "warnings": []
+  }
+ ],
+ "lesson:counts": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n분식     6\n식사     3\n음료     2\n디저트    1\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n분식     0.500000\n식사     0.250000\n음료     0.166667\n디저트    0.083333\nName: proportion, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "매운맛\n0    7\n1    2\n2    2\n3    1\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "['분식' '식사' '음료' '디저트']\n4\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     12\n분류      4\n가격      9\n칼로리    12\n매운맛     4\n판매량    12\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'분식'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2000\n1    4000\n2    4500\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:locs": [
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64\n3     김밥  분식  3500  320    0  150\n4   참치김밥  분식  4500  410    0   97",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴       김밥\n분류       분식\n가격     3500\n칼로리     320\n매운맛       0\n판매량     150\nName: 3, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(3500)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격\n1  치즈떡볶이  분식  5500\n2    라볶이  분식  6000\n3     김밥  분식  3500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류\n1  치즈떡볶이  분식\n2    라볶이  분식",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     4500\n1     5500\n2     6000\n3     3500\n4     4500\n5     4000\n6     4000\n7     8500\n8     8000\n9     1500\n10    2000\n11    2000\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  칼로리\n0   떡볶이  480\n4  참치김밥  410\n8  제육덮밥  780",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "치즈떡볶이\n치즈떡볶이\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "        가격  칼로리\n메뉴             \n김밥    3500  320\n참치김밥  4500  410\n순대    4000  390",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types"
+   ],
+   "warnings": []
+  }
+ ],
+ "lesson:filter": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1     False\n2     False\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9      True\n10     True\n11     True\nName: 칼로리, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류    가격  칼로리  매운맛  판매량\n9   쿨피스   음료  1500  140    0   45\n10   식혜   음료  2000  150    0   38\n11  붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64\n3     김밥  분식  3500  320    0  150\n4   참치김밥  분식  4500  410    0   97\n5     순대  분식  4000  390    0   71\n6     라면  식사  4000  500    1  120\n7    돈가스  식사  8500  890    0   55\n8   제육덮밥  식사  8000  780    3   60",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64\n8   제육덮밥  식사  8000  780    3   60",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류    가격  칼로리  매운맛  판매량\n9   쿨피스   음료  1500  140    0   45\n10   식혜   음료  2000  150    0   38\n11  붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  분류    가격  칼로리  매운맛  판매량\n0  떡볶이  분식  4500  480    2  132\n3   김밥  분식  3500  320    0  150\n6   라면  식사  4000  500    1  120",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n0   떡볶이  분식  4500  480    2  132\n4  참치김밥  분식  4500  410    0   97\n5    순대  분식  4000  390    0   71\n6    라면  식사  4000  500    1  120",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "4\n4\n4\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "['떡볶이', '치즈떡볶이', '라볶이', '김밥', '참치김밥', '순대']",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:sort": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n3      김밥   분식  3500  320    0  150\n0     떡볶이   분식  4500  480    2  132\n6      라면   식사  4000  500    1  120\n4    참치김밥   분식  4500  410    0   97\n1   치즈떡볶이   분식  5500  610    1   88\n11    붕어빵  디저트  2000  230    0   80\n5      순대   분식  4000  390    0   71\n2     라볶이   분식  6000  650    2   64\n8    제육덮밥   식사  8000  780    3   60\n7     돈가스   식사  8500  890    0   55\n9     쿨피스   음료  1500  140    0   45\n10     식혜   음료  2000  150    0   38",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n11    붕어빵  디저트  2000  230    0   80\n2     라볶이   분식  6000  650    2   64\n1   치즈떡볶이   분식  5500  610    1   88\n0     떡볶이   분식  4500  480    2  132\n4    참치김밥   분식  4500  410    0   97\n5      순대   분식  4000  390    0   71\n3      김밥   분식  3500  320    0  150\n7     돈가스   식사  8500  890    0   55\n8    제육덮밥   식사  8000  780    3   60\n6      라면   식사  4000  500    1  120\n10     식혜   음료  2000  150    0   38\n9     쿨피스   음료  1500  140    0   45",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴   분류    가격  칼로리  매운맛  판매량\n0    붕어빵  디저트  2000  230    0   80\n1    라볶이   분식  6000  650    2   64\n2  치즈떡볶이   분식  5500  610    1   88",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['index', '메뉴', '분류', '가격', '칼로리', '매운맛', '판매량'], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n7   돈가스  식사  8500  890    0   55\n8  제육덮밥  식사  8000  780    3   60\n2   라볶이  분식  6000  650    2   64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "3\n",
+   "display": "'김밥'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:columns": [
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량  행사\n0    떡볶이  분식  4500  480    2  132   0\n1  치즈떡볶이  분식  5500  610    1   88   0\n2    라볶이  분식  6000  650    2   64   0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴     할인가      매출\n0    떡볶이  3600.0  594000\n1  치즈떡볶이  4400.0  484000\n2    라볶이  4800.0  384000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    3600\n1    4400\n2    4800\nName: 할인가, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['메뉴', '분류', '가격', '칼로리', '매운맛', '판매량', '할인가', '매출'], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량   할인가      매출\n1  치즈떡볶이  분식  5500  610    1   88  4400  484000\n2    라볶이  분식  6000  650    2   64  4800  384000\n3     김밥  분식  3500  320    0  150  2800  525000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "\"['매출'] not found in axis\""
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['메뉴', '분류', '가격', '칼로리', '매운맛', '판매량', '할인가', '지난주매출'], dtype='object')",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:values": [
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  매운맛\n0    떡볶이  4500    2\n1  치즈떡볶이  5500    1\n2    라볶이  6000    2\n3     김밥  3500    0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  매운맛  원산지\n0    떡볶이  4500    2  NaN\n1  치즈떡볶이  5500    1  NaN\n2    라볶이  6000    2  NaN\n3     김밥  3500    0  NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  매운맛  원산지\n0    떡볶이  4500    2  국내산\n1  치즈떡볶이  5500    1  NaN\n2    라볶이  6000    2  NaN\n3     김밥  3500    0  NaN",
+   "error": null,
+   "warnings": [
+    "FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '국내산' has dtype incompatible with float64, please explicitly cast to a compatible dtype first."
+   ]
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  매운맛  원산지\n0    떡볶이  4500    2  국내산\n1  치즈떡볶이  5500    1  수입산\n2    라볶이  6000    2  수입산\n3     김밥  3500    0  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  매운맛  원산지\n0    떡볶이  4500    2  국내산\n1  치즈떡볶이  5500    1  수입산\n2    라볶이  6000    2  수입산\n3     김밥  3500    0  수입산\n4     어묵  1000    0  국내산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  매운맛  원산지\n0    떡볶이  4500  2.0  국내산\n1  치즈떡볶이  5500  1.0  수입산\n2    라볶이  6000  2.0  수입산\n3     김밥  3500  0.0  수입산\n4     어묵  1000  0.0  국내산\n5     튀김  2000  NaN  NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  매운맛  원산지     행사가\n0    떡볶이  4500  2.0  국내산  3000.0\n1  치즈떡볶이  5500  1.0  수입산  3000.0\n2    라볶이  6000  2.0  수입산     NaN\n3     김밥  3500  0.0  수입산     NaN\n4     어묵  1000  0.0  국내산     NaN\n5     튀김  2000  NaN  NaN     NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    국내산\n1    외국산\n2    외국산\n3    외국산\n4    국내산\n5    NaN\nName: 원산지, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     한국\n1     외국\n2     외국\n3     외국\n4     한국\n5    NaN\nName: 원산지, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   평가  점수\n0  좋음   3\n1  보통   2\n2  나쁨   1\n3  보통   2\n4  좋음   3",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    3.0\n1    2.0\n2    NaN\n3    2.0\n4    3.0\nName: 평가, dtype: float64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:missing": [
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    NaN   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움  NaN\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n5      김밥   분식  3500.0  320.0  안매움  국내산\n6      순대   분식  4000.0  390.0  안매움  NaN\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움  NaN\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴     분류     가격    칼로리     맵기    원산지\n0  False  False  False  False  False  False\n1  False  False  False   True  False  False\n2  False  False  False  False  False   True",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     0\n분류     0\n가격     1\n칼로리    2\n맵기     0\n원산지    3\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류      가격    칼로리   맵기  원산지\n2   라볶이  분식  6000.0  650.0   매움  NaN\n6    순대  분식  4000.0  390.0  안매움  NaN\n10  쿨피스  음료  1500.0  140.0  안매움  NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "(8, 6)\n",
+   "display": "(13, 6)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "원산지\n국내산    8\n모름     3\n수입산    2\n원양산    1\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "390.8333333333333\n",
+   "display": "np.int64(0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "4000.0\n",
+   "display": "메뉴     0\n분류     0\n가격     0\n칼로리    0\n맵기     0\n원산지    0\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "[12.0, 12.0, 13.5, 13.5, 13.5, 11.0]\n[12.0, 13.5, 13.5, 11.0, 11.0, 11.0]\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:dup": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "1\n",
+   "display": "   메뉴  분류      가격    칼로리   맵기  원산지\n5  김밥  분식  3500.0  320.0  안매움  국내산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(13, 6)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류      가격    칼로리   맵기  원산지\n0   떡볶이   분식  4500.0  480.0   매움  국내산\n6    라면   식사  4000.0  500.0   보통  수입산\n9   쿨피스   음료  1500.0  140.0  안매움  NaN\n11  붕어빵  디저트  2000.0  230.0  안매움  국내산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "object\n",
+   "display": "array(['매움', '보통', '안매움'], dtype=object)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(0.6153846153846154)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "invalid literal for int() with base 10: '모름'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    3.0\n1    7.0\n2    NaN\ndtype: float64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:strings": [
+  {
+   "stdout": "",
+   "display": "       상품  수량      코드\n0  떡볶이 세트  10   ab cd\n1   튀김 모둠  20   AB CD\n2  순대 한접시  30  ab cd ",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    떡볶이 세트\n1     튀김 모둠\n2    순대 한접시\nName: 상품, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    떡볶이 단품\n1     튀김 모둠\n2    순대 한접시\nName: 상품, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "AttributeError",
+    "Can only use .str accessor with string values!"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "0    [떡볶이, 단품]\n1     [튀김, 모둠]\n2    [순대, 한접시]\nName: 상품, dtype: object\n",
+   "display": "       상품  수량      코드   종류\n0  떡볶이 단품  10   ab cd  떡볶이\n1   튀김 모둠  20   AB CD   튀김\n2  순대 한접시  30  ab cd    순대",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    False\n1     True\n2    False\nName: 상품, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "[6, 5, 6]\n['AB CD', 'AB CD', 'AB CD ']\nFalse\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "1",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "['떡볶', '튀김', '순대']\n['떡볶이 단품', '튀김 모둠']\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       상품  수량    코드   종류  규모\n0  떡볶이 단품  10  abcd  떡볶이  적음\n1   튀김 모둠  20  abcd   튀김  많음\n2  순대 한접시  30  abcd   순대  많음",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    적음\n1    많음\n2    많음\nName: 수량, dtype: object",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:groupby": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트    2000.000000\n분식     4666.666667\n식사     6833.333333\n음료     1750.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트    1\n분식     6\n식사     3\n음료     2\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     판매량   칼로리\n분류            \n디저트   80   230\n분식   602  2860\n식사   235  2170\n음료    83   290",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            mean   max   min\n분류                          \n디저트  2000.000000  2000  2000\n분식   4666.666667  6000  3500\n식사   6833.333333  8500  4000\n음료   1750.000000  2000  1500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "              가격  판매량\n분류                   \n디저트  2000.000000   80\n분식   4666.666667  602\n식사   6833.333333  235\n음료   1750.000000   83",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류   매운맛\n디저트  0       80\n분식   0      318\n     1       88\n     2      196\n식사   0       55\n     1      120\n     3       60\n음료   0       83\nName: 판매량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    분류  매운맛  판매량\n0  디저트    0   80\n1   분식    0  318\n2   분식    1   88\n3   분식    2  196\n4   식사    0   55\n5   식사    1  120\n6   식사    3   60\n7   음료    0   83",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'분식'",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:transform": [
+  {
+   "stdout": "",
+   "display": "   분류 크기      가격\n0  분식  소  3000.0\n1  음료  소     NaN\n2  분식  대  4500.0\n3  음료  대     NaN\n4  분식  대  5000.0\n5  음료  대  2500.0\n6  분식  소     NaN\n7  음료  소  1800.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n분식    4166.666667\n음료    2150.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    4166.666667\n1    2150.000000\n2    4166.666667\n3    2150.000000\n4    4166.666667\n5    2150.000000\n6    4166.666667\n7    2150.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   분류 크기           가격\n0  분식  소  3000.000000\n1  음료  소  2150.000000\n2  분식  대  4500.000000\n3  음료  대  2150.000000\n4  분식  대  5000.000000\n5  음료  대  2500.000000\n6  분식  소  4166.666667\n7  음료  소  1800.000000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   분류 크기      가격\n0  분식  소  3000.0\n1  음료  소  1800.0\n2  분식  대  4500.0\n3  음료  대  2500.0\n4  분식  대  5000.0\n5  음료  대  2500.0\n6  분식  소  3000.0\n7  음료  소  1800.0",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:reshape": [
+  {
+   "stdout": "",
+   "display": "   주문번호          날짜     시각    메뉴  수량    결제\n0     1  2025-03-03  12:26    김밥   2    카드\n1     2  2025-03-03  13:35    라면   2    카드\n2     3  2025-03-03  13:39  참치김밥   1    카드\n3     4  2025-03-03  15:23   붕어빵   3  간편결제\n4     5  2025-03-03  16:19    김밥   2    카드",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      수량\n결제      \n간편결제  34\n카드    65\n현금    18",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제          간편결제    카드   현금\n날짜                         \n2025-03-03   5.0   9.0  2.0\n2025-03-04   5.0   7.0  NaN\n2025-03-05   9.0   6.0  5.0\n2025-03-06   5.0   9.0  3.0\n2025-03-07   1.0  18.0  3.0\n2025-03-08   6.0  10.0  2.0\n2025-03-09   3.0   6.0  3.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제          간편결제  카드  현금\n날짜                      \n2025-03-03     5   9   2\n2025-03-04     5   7   0\n2025-03-05     9   6   5\n2025-03-06     5   9   3\n2025-03-07     1  18   3\n2025-03-08     6  10   2\n2025-03-09     3   6   3",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      수량  주문번호\n결제            \n간편결제  34    21\n카드    65    45\n현금    18    10",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제          간편결제    카드   현금\n날짜                         \n2025-03-03   5.0   9.0  2.0\n2025-03-04   5.0   7.0  NaN\n2025-03-05   9.0   6.0  5.0\n2025-03-06   5.0   9.0  3.0\n2025-03-07   1.0  18.0  3.0\n2025-03-08   6.0  10.0  2.0\n2025-03-09   3.0   6.0  3.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜    2025-03-03  2025-03-04  2025-03-05  2025-03-06  2025-03-07  2025-03-08  \\\n결제                                                                             \n간편결제         5.0         5.0         9.0         5.0         1.0         6.0   \n카드           9.0         7.0         6.0         9.0        18.0        10.0   \n현금           2.0         NaN         5.0         3.0         3.0         2.0   \n\n날짜    2025-03-09  \n결제                \n간편결제         3.0  \n카드           6.0  \n현금           3.0  ",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  동아리  1학기  2학기\n0  코딩   12   15\n1  로봇    8    9\n2  방송   10    7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  동아리 variable  value\n0  코딩      1학기     12\n1  로봇      1학기      8\n2  방송      1학기     10\n3  코딩      2학기     15\n4  로봇      2학기      9\n5  방송      2학기      7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  동아리   학기  인원\n0  코딩  1학기  12\n1  로봇  1학기   8\n2  방송  1학기  10\n3  코딩  2학기  15\n4  로봇  2학기   9\n5  방송  2학기   7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "학기\n1학기    30\n2학기    31\nName: 인원, dtype: int64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:dates": [
+  {
+   "stdout": "날짜       object\n평균기온    float64\n최고기온    float64\n최저기온    float64\n강수량     float64\n평균풍속    float64\ndtype: object\n",
+   "display": "           날짜  평균기온  최고기온  최저기온  강수량  평균풍속\n0  2024-01-01   0.1   6.0  -4.2  0.0   7.0\n1  2024-01-02   3.2   7.8  -1.9  0.0   6.8\n2  2024-01-03   0.4   6.9  -5.4  0.0   4.6",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "dtype('<M8[ns]')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "          날짜  월\n0 2024-01-01  1\n1 2024-01-02  1\n2 2024-01-03  1",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "월\n1     5.1\n2     4.9\n3     3.2\n4     3.1\n5     3.5\n6     3.3\n7     3.3\n8     3.0\n9     3.2\n10    3.3\n11    4.5\n12    4.7\nName: 평균풍속, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int32(1)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            날짜  평균기온  최고기온  최저기온   강수량  평균풍속  월\n213 2024-08-01  28.8  34.1  23.5  37.4   2.1  8\n214 2024-08-02  26.2  32.1  20.0   0.0   2.1  8\n215 2024-08-03  28.1  32.2  24.4  15.4   2.4  8",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "요일\nFriday       22\nMonday       16\nSaturday     18\nSunday       12\nThursday     17\nTuesday      12\nWednesday    20\nName: 수량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "일시\n11    13\n12    14\n13    17\n14    17\n15    11\n16    14\n17     9\n18    12\n19    10\nName: 수량, dtype: int64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:timeseries": [
+  {
+   "stdout": "",
+   "display": "     주문길                      기록\n0    배달앱     2025-03-07 18:05:20\n1   전화장부             2025년03월07일\n2  카드단말기  03/07/2025 06:05:20 PM\n3   키오스크                25/03/07\n4  옛 계산대              2025:03:07\n5    기사앱     7 Mar 2025 18:41:05",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-07 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "DateParseError",
+    "hour must be in 0..23: 2025:03:07, at position 0"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-07 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-07 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-07 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "2025-03-07 18:05:20\n2025-03-07 18:41:05\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "주문    datetime64[ns]\n도착    datetime64[ns]\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "                   주문  요일     주말\n0 2025-03-07 18:05:20   4  False\n1 2025-03-08 12:30:10   5   True\n2 2025-03-09 19:10:00   6   True\n3 2025-03-10 11:45:30   0  False",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "[18, 12, 19, 11]\n[5, 30, 10, 45]\n[20, 10, 0, 30]\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "날짜     datetime64[ns]\n강수량           float64\ndtype: object\n31 226.1\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜\n2024Q1    124.8\n2024Q2    239.0\n2024Q3    433.7\n2024Q4    133.8\nFreq: Q-DEC, Name: 강수량, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-06-14 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "4 days 04:00:00\n9 days 03:04:05\n2025-02-28 00:00:00\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "                   주문                  도착            걸린시간\n0 2025-03-07 18:05:20 2025-03-07 18:41:05 0 days 00:35:45\n1 2025-03-08 12:30:10 2025-03-08 13:01:40 0 days 00:31:30\n2 2025-03-09 19:10:00 2025-03-09 19:52:30 0 days 00:42:30\n3 2025-03-10 11:45:30 2025-03-10 12:20:59 0 days 00:35:29",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "             걸린시간        걸린분\n0 0 days 00:35:45  35.750000\n1 0 days 00:31:30  31.500000\n2 0 days 00:42:30  42.500000\n3 0 days 00:35:29  35.483333",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "2 days 02:00:00\n7200 180000.0\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "36 32 32\n45.0 30.0\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:concat": [
+  {
+   "stdout": "    메뉴    가격\n0  떡볶이  4500\n1   김밥  3500\n2   순대  4000\n    메뉴    가격\n0  쿨피스  1500\n1   식혜  2000\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0  떡볶이  4500\n1   김밥  3500\n2   순대  4000\n0  쿨피스  1500\n1   식혜  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0  떡볶이  4500\n1   김밥  3500\n2   순대  4000\n3  쿨피스  1500\n4   식혜  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴      가격    칼로리\n0  떡볶이  4500.0    NaN\n1   김밥  3500.0    NaN\n2   순대  4000.0    NaN\n3  붕어빵     NaN  230.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴\n0  떡볶이\n1   김밥\n2   순대\n3  붕어빵",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  칼로리   맵기\n0  떡볶이  4500  480   매움\n1   김밥  3500  320  안매움\n2   순대  4000  390  안매움",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(8, 2)",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:merge": [
+  {
+   "stdout": "    메뉴  수량\n0   김밥   3\n1   라면   2\n2   순대   1\n3  떡볶이   4\n    메뉴    가격\n0   김밥  3500\n1   라면  4000\n2  떡볶이  4500\n3   식혜  2000\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량    가격\n0   김밥   3  3500\n1   라면   2  4000\n2  떡볶이   4  4500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량      가격\n0   김밥   3  3500.0\n1   라면   2  4000.0\n2   순대   1     NaN\n3  떡볶이   4  4500.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴   수량      가격\n0   김밥  3.0  3500.0\n1  떡볶이  4.0  4500.0\n2   라면  2.0  4000.0\n3   순대  1.0     NaN\n4   식혜  NaN  2000.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량      가격       매출\n0   김밥   3  3500.0  10500.0\n1   라면   2  4000.0   8000.0\n2   순대   1     NaN      NaN\n3  떡볶이   4  4500.0  18000.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "   메뉴  가격_x  가격_y\n0  김밥  3500  3800\n1  라면  4000  4300\n",
+   "display": "   메뉴  가격_작년  가격_올해\n0  김밥   3500   3800\n1  라면   4000   4300",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴\n제육덮밥    80000\n참치김밥    67500\n김밥      59500\nName: 매출, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(4, 3)",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "lesson:predict": [
+  {
+   "stdout": "",
+   "display": "  이름  점수  반\n0  가  80  A\n1  나  95  B\n2  다  70  A\n3  라  95  B",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "[95, 70]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "[95]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(85.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(190)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "['가', '나', '다', '라']",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(2)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(2)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(4.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(100)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(4, 2)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "[1, 2, 0]",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m1": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "이동거리\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m2": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "300\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m3": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "24.94\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m4": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "물빛구\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m5": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "101\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m6": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "0.06\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m7": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "4\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m8": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "22.84\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m9": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "Thursday\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "mission:m10": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "21.4\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:series": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    10\n1    20\n2    30\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(20)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "a    100\nb    200\nc    300\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(300)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "a    100\nc    300\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "a    100\nb    200\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "b    200\nc    300\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "a    200\nb    400\nc    600\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "array([100, 200, 300])",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['a', 'b', 'c'], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "dtype('int64')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "국어    90\n영어    85\n수학    95\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    1.0\n1    3.0\n2    4.0\n3    NaN\n4    6.0\ndtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     a\n1     b\n2    10\n3    20\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    1.5\n1    2.0\n2    3.0\nName: 키, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(2)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "x     5\nz    15\ndtype: int64\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(10.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(15)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "10    3\n20    1\n30    2\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "a     봄\nb    여름\nName: 계절, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "a    5\nb    5\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    1.0\n1    2.0\n2    3.0\ndtype: float64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:frame": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0  비빔밥  7000\n1   라면  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   수학  영어\n0  80  90\n1  85  95",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   x  y\na  1  2\nb  3  4\nc  5  6",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   국어  수학\n철  80  85\n영  90  95\n민  70  75",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    비빔밥\n1     라면\nName: 메뉴, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴\n0  비빔밥\n1   라면",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "pandas.core.series.Series",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "pandas.core.frame.DataFrame",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['메뉴', '가격'], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "RangeIndex(start=0, stop=2, step=1)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(2, 2)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   a\nx  1\ny  2",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0  비빔밥  7000\n1   라면  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   Unnamed: 0   메뉴    가격\n0           0  비빔밥  7000\n1           1   라면  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0  비빔밥  7000\n1   라면  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       0     1\n메뉴   비빔밥    라면\n가격  7000  4000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "array([['비빔밥', 7000],\n       ['라면', 4000]], dtype=object)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴    object\n가격     int64\ndtype: object",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:look": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n0     떡볶이   분식  4500  480    2  132\n1   치즈떡볶이   분식  5500  610    1   88\n2     라볶이   분식  6000  650    2   64\n3      김밥   분식  3500  320    0  150\n4    참치김밥   분식  4500  410    0   97\n5      순대   분식  4000  390    0   71\n6      라면   식사  4000  500    1  120\n7     돈가스   식사  8500  890    0   55\n8    제육덮밥   식사  8000  780    3   60\n9     쿨피스   음료  1500  140    0   45\n10     식혜   음료  2000  150    0   38\n11    붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64\n3     김밥  분식  3500  320    0  150\n4   참치김밥  분식  4500  410    0   97",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류    가격  칼로리  매운맛  판매량\n10   식혜   음료  2000  150    0   38\n11  붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(12, 6)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['메뉴', '분류', '가격', '칼로리', '매운맛', '판매량'], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     object\n분류     object\n가격      int64\n칼로리     int64\n매운맛     int64\n판매량     int64\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 12 entries, 0 to 11\nData columns (total 6 columns):\n #   Column  Non-Null Count  Dtype \n---  ------  --------------  ----- \n 0   메뉴      12 non-null     object\n 1   분류      12 non-null     object\n 2   가격      12 non-null     int64 \n 3   칼로리     12 non-null     int64 \n 4   매운맛     12 non-null     int64 \n 5   판매량     12 non-null     int64 \ndtypes: int64(4), object(2)\nmemory usage: 708.0+ bytes\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "                가격         칼로리       매운맛         판매량\ncount    12.000000   12.000000  12.00000   12.000000\nmean   4500.000000  462.500000   0.75000   83.333333\nstd    2225.880827  238.599131   1.05529   35.387038\nmin    1500.000000  140.000000   0.00000   38.000000\n25%    3125.000000  297.500000   0.00000   58.750000\n50%    4250.000000  445.000000   0.00000   75.500000\n75%    5625.000000  620.000000   1.25000  102.750000\nmax    8500.000000  890.000000   3.00000  150.000000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "         메뉴  분류\ncount    12  12\nunique   12   4\ntop     떡볶이  분식\nfreq      1   6",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "         메뉴   분류           가격         칼로리       매운맛         판매량\ncount    12   12    12.000000   12.000000  12.00000   12.000000\nunique   12    4          NaN         NaN       NaN         NaN\ntop     떡볶이   분식          NaN         NaN       NaN         NaN\nfreq      1    6          NaN         NaN       NaN         NaN\nmean    NaN  NaN  4500.000000  462.500000   0.75000   83.333333\nstd     NaN  NaN  2225.880827  238.599131   1.05529   35.387038\nmin     NaN  NaN  1500.000000  140.000000   0.00000   38.000000\n25%     NaN  NaN  3125.000000  297.500000   0.00000   58.750000\n50%     NaN  NaN  4250.000000  445.000000   0.00000   75.500000\n75%     NaN  NaN  5625.000000  620.000000   1.25000  102.750000\nmax     NaN  NaN  8500.000000  890.000000   3.00000  150.000000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(4500.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(4250.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(238.59913129461611)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(1000)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(1500)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "가격     4500.000000\n칼로리     462.500000\n매운맛       0.750000\n판매량      83.333333\ndtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "가격     54000\n칼로리     5550\n매운맛        9\n판매량     1000\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     12\n분류     12\n가격     12\n칼로리    12\n매운맛    12\n판매량    12\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n분식     6\n식사     3\n음료     2\n디저트    1\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "array(['분식', '식사', '음료', '디저트'], dtype=object)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "4",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     12\n분류      4\n가격      9\n칼로리    12\n매운맛     4\n판매량    12\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n분식     0.500000\n식사     0.250000\n음료     0.166667\n디저트    0.083333\nName: proportion, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "매운맛\n0    7\n1    2\n2    2\n3    1\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(3125.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0.25    3125.0\n0.75    5625.0\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "12",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "72",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "           가격       칼로리\n가격   1.000000  0.982536\n칼로리  0.982536  1.000000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(0.9825359292134742)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    분식\nName: 분류, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2000\n1    4000\n2    4500\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴      돈가스\n분류       식사\n가격     8500\n칼로리     890\n매운맛       0\n판매량      55\nName: 7, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0      4500\n1     10000\n2     16000\n3     19500\n4     24000\n5     28000\n6     32000\n7     40500\n8     48500\n9     50000\n10    52000\n11    54000\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(7000)",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:select": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     4500\n1     5500\n2     6000\n3     3500\n4     4500\n5     4000\n6     4000\n7     8500\n8     8000\n9     1500\n10    2000\n11    2000\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     4500\n1     5500\n2     6000\n3     3500\n4     4500\n5     4000\n6     4000\n7     8500\n8     8000\n9     1500\n10    2000\n11    2000\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴    가격\n0     떡볶이  4500\n1   치즈떡볶이  5500\n2     라볶이  6000\n3      김밥  3500\n4    참치김밥  4500\n5      순대  4000\n6      라면  4000\n7     돈가스  8500\n8    제육덮밥  8000\n9     쿨피스  1500\n10     식혜  2000\n11    붕어빵  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n0    떡볶이  분식  4500  480    2  132\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴      라볶이\n분류       분식\n가격     6000\n칼로리     650\n매운맛       2\n판매량      64\nName: 2, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(6000)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리\n1  치즈떡볶이  분식  5500  610\n2    라볶이  분식  6000  650\n3     김밥  분식  3500  320",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴    가격\n0   떡볶이  4500\n2   라볶이  6000\n4  참치김밥  4500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     4500\n1     5500\n2     6000\n3     3500\n4     4500\n5     4000\n6     4000\n7     8500\n8     8000\n9     1500\n10    2000\n11    2000\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴      떡볶이\n분류       분식\n가격     4500\n칼로리     480\n매운맛       2\n판매량     132\nName: 0, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0      분식\n1      분식\n2      분식\n3      분식\n4      분식\n5      분식\n6      식사\n7      식사\n8      식사\n9      음료\n10     음료\n11    디저트\nName: 분류, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류\n1  치즈떡볶이  분식\n2    라볶이  분식",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴      붕어빵\n분류      디저트\n가격     2000\n칼로리     230\n매운맛       0\n판매량      80\nName: 11, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격\n0    떡볶이  4500\n1  치즈떡볶이  5500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(6000)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "        분류    가격  칼로리  매운맛  판매량\n메뉴                             \n떡볶이     분식  4500  480    2  132\n치즈떡볶이   분식  5500  610    1   88\n라볶이     분식  6000  650    2   64\n김밥      분식  3500  320    0  150\n참치김밥    분식  4500  410    0   97\n순대      분식  4000  390    0   71\n라면      식사  4000  500    1  120\n돈가스     식사  8500  890    0   55\n제육덮밥    식사  8000  780    3   60\n쿨피스     음료  1500  140    0   45\n식혜      음료  2000  150    0   38\n붕어빵    디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류       분식\n가격     3500\n칼로리     320\n매운맛       0\n판매량     150\nName: 김밥, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(3500)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      가격  칼로리\n메뉴           \n김밥  3500  320\n라면  4000  500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴\n라볶이     6000\n김밥      3500\n참치김밥    4500\n순대      4000\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       분류    가격  칼로리  매운맛  판매량\n메뉴                            \n떡볶이    분식  4500  480    2  132\n치즈떡볶이  분식  5500  610    1   88",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['떡볶이', '치즈떡볶이', '라볶이', '김밥', '참치김밥', '순대', '라면', '돈가스', '제육덮밥', '쿨피스',\n       '식혜', '붕어빵'],\n      dtype='object', name='메뉴')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n0     떡볶이   분식  4500  480    2  132\n1   치즈떡볶이   분식  5500  610    1   88\n2     라볶이   분식  6000  650    2   64\n3      김밥   분식  3500  320    0  150\n4    참치김밥   분식  4500  410    0   97\n5      순대   분식  4000  390    0   71\n6      라면   식사  4000  500    1  120\n7     돈가스   식사  8500  890    0   55\n8    제육덮밥   식사  8000  780    3   60\n9     쿨피스   음료  1500  140    0   45\n10     식혜   음료  2000  150    0   38\n11    붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "1    치즈떡볶이\n2      라볶이\n7      돈가스\n8     제육덮밥\nName: 메뉴, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n3    김밥  분식  3500  320    0  150\n4  참치김밥  분식  4500  410    0   97\n5    순대  분식  4000  390    0   71",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(6000)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(6000)",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:filter": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1      True\n2      True\n3     False\n4     False\n5     False\n6     False\n7      True\n8      True\n9     False\n10    False\n11    False\nName: 가격, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64\n7    돈가스  식사  8500  890    0   55\n8   제육덮밥  식사  8000  780    3   60",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n0   떡볶이  분식  4500  480    2  132\n4  참치김밥  분식  4500  410    0   97\n5    순대  분식  4000  390    0   71",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류    가격  칼로리  매운맛  판매량\n9   쿨피스   음료  1500  140    0   45\n10   식혜   음료  2000  150    0   38\n11  붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴   분류    가격  칼로리  매운맛  판매량\n6     라면   식사  4000  500    1  120\n7    돈가스   식사  8500  890    0   55\n8   제육덮밥   식사  8000  780    3   60\n9    쿨피스   음료  1500  140    0   45\n10    식혜   음료  2000  150    0   38\n11   붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류    가격  칼로리  매운맛  판매량\n9   쿨피스   음료  1500  140    0   45\n10   식혜   음료  2000  150    0   38\n11  붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1     False\n2     False\n3      True\n4     False\n5     False\n6     False\n7     False\n8     False\n9     False\n10    False\n11    False\nName: 메뉴, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n0   떡볶이  분식  4500  480    2  132\n4  참치김밥  분식  4500  410    0   97\n5    순대  분식  4000  390    0   71\n6    라면  식사  4000  500    1  120",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n3    김밥  분식  3500  320    0  150\n4  참치김밥  분식  4500  410    0   97",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "6       라면\n7      돈가스\n8     제육덮밥\n9      쿨피스\n10      식혜\n11     붕어빵\nName: 메뉴, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(4)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "4",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all()."
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "['떡볶이', '치즈떡볶이', '라볶이', '라면', '제육덮밥']",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량\n1  치즈떡볶이  분식  5500  610    1   88\n2    라볶이  분식  6000  650    2   64\n7    돈가스  식사  8500  890    0   55\n8   제육덮밥  식사  8000  780    3   60",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:sort": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n9     쿨피스   음료  1500  140    0   45\n10     식혜   음료  2000  150    0   38\n11    붕어빵  디저트  2000  230    0   80\n3      김밥   분식  3500  320    0  150\n5      순대   분식  4000  390    0   71\n4    참치김밥   분식  4500  410    0   97\n0     떡볶이   분식  4500  480    2  132\n6      라면   식사  4000  500    1  120\n1   치즈떡볶이   분식  5500  610    1   88\n2     라볶이   분식  6000  650    2   64\n8    제육덮밥   식사  8000  780    3   60\n7     돈가스   식사  8500  890    0   55",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n7     돈가스   식사  8500  890    0   55\n8    제육덮밥   식사  8000  780    3   60\n2     라볶이   분식  6000  650    2   64\n1   치즈떡볶이   분식  5500  610    1   88\n6      라면   식사  4000  500    1  120\n0     떡볶이   분식  4500  480    2  132\n4    참치김밥   분식  4500  410    0   97\n5      순대   분식  4000  390    0   71\n3      김밥   분식  3500  320    0  150\n11    붕어빵  디저트  2000  230    0   80\n10     식혜   음료  2000  150    0   38\n9     쿨피스   음료  1500  140    0   45",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴   분류    가격  칼로리  매운맛  판매량\n9   쿨피스   음료  1500  140    0   45\n10   식혜   음료  2000  150    0   38\n11  붕어빵  디저트  2000  230    0   80",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n11    붕어빵  디저트  2000  230    0   80\n3      김밥   분식  3500  320    0  150\n5      순대   분식  4000  390    0   71\n0     떡볶이   분식  4500  480    2  132\n4    참치김밥   분식  4500  410    0   97\n1   치즈떡볶이   분식  5500  610    1   88\n2     라볶이   분식  6000  650    2   64\n6      라면   식사  4000  500    1  120\n8    제육덮밥   식사  8000  780    3   60\n7     돈가스   식사  8500  890    0   55\n9     쿨피스   음료  1500  140    0   45\n10     식혜   음료  2000  150    0   38",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n11    붕어빵  디저트  2000  230    0   80\n2     라볶이   분식  6000  650    2   64\n1   치즈떡볶이   분식  5500  610    1   88\n0     떡볶이   분식  4500  480    2  132\n4    참치김밥   분식  4500  410    0   97\n5      순대   분식  4000  390    0   71\n3      김밥   분식  3500  320    0  150\n7     돈가스   식사  8500  890    0   55\n8    제육덮밥   식사  8000  780    3   60\n6      라면   식사  4000  500    1  120\n10     식혜   음료  2000  150    0   38\n9     쿨피스   음료  1500  140    0   45",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n0      김밥   분식  3500  320    0  150\n1     떡볶이   분식  4500  480    2  132\n2      라면   식사  4000  500    1  120\n3    참치김밥   분식  4500  410    0   97\n4   치즈떡볶이   분식  5500  610    1   88\n5     붕어빵  디저트  2000  230    0   80\n6      순대   분식  4000  390    0   71\n7     라볶이   분식  6000  650    2   64\n8    제육덮밥   식사  8000  780    3   60\n9     돈가스   식사  8500  890    0   55\n10    쿨피스   음료  1500  140    0   45\n11     식혜   음료  2000  150    0   38",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n11    붕어빵  디저트  2000  230    0   80\n10     식혜   음료  2000  150    0   38\n9     쿨피스   음료  1500  140    0   45\n8    제육덮밥   식사  8000  780    3   60\n7     돈가스   식사  8500  890    0   55\n6      라면   식사  4000  500    1  120\n5      순대   분식  4000  390    0   71\n4    참치김밥   분식  4500  410    0   97\n3      김밥   분식  3500  320    0  150\n2     라볶이   분식  6000  650    2   64\n1   치즈떡볶이   분식  5500  610    1   88\n0     떡볶이   분식  4500  480    2  132",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  분류    가격  칼로리  매운맛  판매량\n3   김밥  분식  3500  320    0  150\n0  떡볶이  분식  4500  480    2  132\n6   라면  식사  4000  500    1  120",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n9   쿨피스  음료  1500  140    0   45\n10   식혜  음료  2000  150    0   38",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "3    150\n0    132\n6    120\nName: 판매량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "10     38\n9      45\n7      55\n8      60\n2      64\n5      71\n11     80\n1      88\n4      97\n6     120\n0     132\n3     150\nName: 판매량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0      7.5\n1      9.0\n2     10.0\n3      4.0\n4      7.5\n5      5.5\n6      5.5\n7     12.0\n8     11.0\n9      1.0\n10     2.5\n11     2.5\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류    가격  칼로리  매운맛  판매량\n3      김밥   분식  3500  320    0  150\n7     돈가스   식사  8500  890    0   55\n0     떡볶이   분식  4500  480    2  132\n6      라면   식사  4000  500    1  120\n2     라볶이   분식  6000  650    2   64\n11    붕어빵  디저트  2000  230    0   80\n5      순대   분식  4000  390    0   71\n10     식혜   음료  2000  150    0   38\n8    제육덮밥   식사  8000  780    3   60\n4    참치김밥   분식  4500  410    0   97\n1   치즈떡볶이   분식  5500  610    1   88\n9     쿨피스   음료  1500  140    0   45",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "9     쿨피스\n10     식혜\n11    붕어빵\nName: 메뉴, dtype: object",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:modify": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량      매출\n0    떡볶이  분식  4500  480    2  132  594000\n1  치즈떡볶이  분식  5500  610    1   88  484000\n2    라볶이  분식  6000  650    2   64  384000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴     할인가\n0    떡볶이  4050.0\n1  치즈떡볶이  4950.0\n2    라볶이  5400.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    4050\n1    4950\n2    5400\nName: 할인가, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량      매출   할인가  새열\n0    떡볶이  분식  4500  480    2  132  594000  4050   0\n1  치즈떡볶이  분식  5500  610    1   88  484000  4950   0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량      매출   할인가\n0    떡볶이  분식  4500  480    2  132  594000  4050\n1  치즈떡볶이  분식  5500  610    1   88  484000  4950",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량      매출\n0    떡볶이  분식  4500  480    2  132  594000\n1  치즈떡볶이  분식  5500  610    1   88  484000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량      매출   할인가  새열\n1  치즈떡볶이  분식  5500  610    1   88  484000  4950   0\n2    라볶이  분식  6000  650    2   64  384000  5400   0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  분류    가격  칼로리  매운맛  판매량      매출   할인가  새열\n2  라볶이  분식  6000  650    2   64  384000  5400   0\n3   김밥  분식  3500  320    0  150  525000  3150   0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['메뉴', '분류', '가격', '칼로리', '매운맛', '판매량', '매출', '할인가'], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류   판매가  칼로리  매운맛  판매량      매출   할인가\n0    떡볶이  분식  4500  480    2  132  594000  4050\n1  치즈떡볶이  분식  5500  610    1   88  484000  4950",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['메뉴', '분류', '가격', '칼로리', '매운맛', '판매량', '매출액', '할인가'], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    480.0\n1    610.0\n2    650.0\nName: 칼로리, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    4500\n1    5500\n2    6000\nName: 가격, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     object\n분류     object\n가격      int64\n칼로리     int64\n매운맛     int64\n판매량     int64\n매출액     int64\n할인가     int64\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    5000\n1    6000\n2    6500\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  분류    가격  칼로리  매운맛  판매량     매출액   할인가\n0  떡볶이  분식  5500  480    2  132  594000  4050",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량    매출액   할인가\n9   쿨피스  음료  1800  140    0   45  67500  1350\n10   식혜  음료  1800  150    0   38  76000  1800",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  분류    가격  칼로리  매운맛  판매량     매출액   할인가\n0    떡볶이  분식  5500  480    2  132  594000  4050\n1  치즈떡볶이  분식  6000  610    1   88  484000  4950",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    11000\n1    12000\n2    13000\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴 비싼가\n0     떡볶이  보통\n1   치즈떡볶이  비쌈\n2     라볶이  비쌈\n3      김밥  보통\n4    참치김밥  보통\n5      순대  보통\n6      라면  보통\n7     돈가스  비쌈\n8    제육덮밥  비쌈\n9     쿨피스  보통\n10     식혜  보통\n11    붕어빵  보통",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  등급\n0    떡볶이  낮음\n1  치즈떡볶이  높음\n2    라볶이  높음\n3     김밥  낮음",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  번호  분류    가격  칼로리  매운맛  판매량     매출액   할인가 비싼가  등급\n0    떡볶이   0  분식  5500  480    2  132  594000  4050  보통  낮음\n1  치즈떡볶이   1  분식  6000  610    1   88  484000  4950  비쌈  높음",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:missing": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    NaN   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움  NaN\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n5      김밥   분식  3500.0  320.0  안매움  국내산\n6      순대   분식  4000.0  390.0  안매움  NaN\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움  NaN\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴     분류     가격    칼로리     맵기    원산지\n0   False  False  False  False  False  False\n1   False  False  False   True  False  False\n2   False  False  False  False  False   True\n3   False  False  False  False  False  False\n4   False  False  False  False  False  False\n5   False  False  False  False  False  False\n6   False  False  False  False  False   True\n7   False  False  False  False  False  False\n8   False  False  False  False  False  False\n9   False  False  False   True  False  False\n10  False  False  False  False  False   True\n11  False  False  False  False  False  False\n12  False  False  False  False  False  False\n13  False  False   True  False  False  False",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     0\n분류     0\n가격     1\n칼로리    2\n맵기     0\n원산지    3\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(6)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 14 entries, 0 to 13\nData columns (total 6 columns):\n #   Column  Non-Null Count  Dtype  \n---  ------  --------------  -----  \n 0   메뉴      14 non-null     object \n 1   분류      14 non-null     object \n 2   가격      13 non-null     float64\n 3   칼로리     12 non-null     float64\n 4   맵기      14 non-null     object \n 5   원산지     11 non-null     object \ndtypes: float64(2), object(4)\nmemory usage: 804.0+ bytes\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1      True\n2     False\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9      True\n10    False\n11    False\n12    False\n13    False\nName: 칼로리, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류      가격    칼로리   맵기  원산지\n2   라볶이  분식  6000.0  650.0   매움  NaN\n6    순대  분식  4000.0  390.0  안매움  NaN\n10  쿨피스  음료  1500.0  140.0  안매움  NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴   분류      가격    칼로리   맵기  원산지\n0    떡볶이   분식  4500.0  480.0   매움  국내산\n3     김밥   분식  3500.0  320.0  안매움  국내산\n4   참치김밥   분식  4500.0  410.0  안매움  원양산\n5     김밥   분식  3500.0  320.0  안매움  국내산\n7     라면   식사  4000.0  500.0   보통  수입산\n8    돈가스   식사  8500.0  890.0  안매움  국내산\n11    식혜   음료  2000.0  150.0  안매움  국내산\n12   붕어빵  디저트  2000.0  230.0  안매움  국내산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    NaN   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움  NaN\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n5      김밥   분식  3500.0  320.0  안매움  국내산\n6      순대   분식  4000.0  390.0  안매움  NaN\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움  NaN\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류   맵기\n0     떡볶이   분식   매움\n1   치즈떡볶이   분식   보통\n2     라볶이   분식   매움\n3      김밥   분식  안매움\n4    참치김밥   분식  안매움\n5      김밥   분식  안매움\n6      순대   분식  안매움\n7      라면   식사   보통\n8     돈가스   식사  안매움\n9    제육덮밥   식사   매움\n10    쿨피스   음료  안매움\n11     식혜   음료  안매움\n12    붕어빵  디저트  안매움\n13  아이스크림  디저트  안매움",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     국내산\n1     국내산\n2      모름\n3     국내산\n4     원양산\n5     국내산\n6      모름\n7     수입산\n8     국내산\n9     국내산\n10     모름\n11    국내산\n12    국내산\n13    수입산\nName: 원산지, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    NaN   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움   모름\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n5      김밥   분식  3500.0  320.0  안매움  국내산\n6      순대   분식  4000.0  390.0  안매움   모름\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움   모름\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     480.000000\n1     390.833333\n2     650.000000\n3     320.000000\n4     410.000000\n5     320.000000\n6     390.000000\n7     500.000000\n8     890.000000\n9     390.833333\n10    140.000000\n11    150.000000\n12    230.000000\n13    210.000000\nName: 칼로리, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     480.0\n1     355.0\n2     650.0\n3     320.0\n4     410.0\n5     320.0\n6     390.0\n7     500.0\n8     890.0\n9     355.0\n10    140.0\n11    150.0\n12    230.0\n13    210.0\nName: 칼로리, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(390.8333333333333)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     480.0\n1       0.0\n2     650.0\n3     320.0\n4     410.0\n5     320.0\n6     390.0\n7     500.0\n8     890.0\n9       0.0\n10    140.0\n11    150.0\n12    230.0\n13    210.0\nName: 칼로리, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    0.0   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움    0\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n5      김밥   분식  3500.0  320.0  안매움  국내산\n6      순대   분식  4000.0  390.0  안매움    0\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    0.0   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움    0\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산\n13  아이스크림  디저트     0.0  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     480.0\n1     480.0\n2     650.0\n3     320.0\n4     410.0\n5     320.0\n6     390.0\n7     500.0\n8     890.0\n9     890.0\n10    140.0\n11    150.0\n12    230.0\n13    210.0\nName: 칼로리, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     480.0\n1     650.0\n2     650.0\n3     320.0\n4     410.0\n5     320.0\n6     390.0\n7     500.0\n8     890.0\n9     140.0\n10    140.0\n11    150.0\n12    230.0\n13    210.0\nName: 칼로리, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     국내산\n1     국내산\n2     국내산\n3     국내산\n4     원양산\n5     국내산\n6     국내산\n7     수입산\n8     국내산\n9     국내산\n10    국내산\n11    국내산\n12    국내산\n13    수입산\nName: 원산지, dtype: object",
+   "error": null,
+   "warnings": [
+    "FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead."
+   ]
+  },
+  {
+   "stdout": "",
+   "display": "원산지\n국내산    8\nNaN    3\n수입산    2\n원양산    1\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     14\n분류     14\n가격     13\n칼로리    12\n맵기     14\n원산지    11\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     국내산\n1     국내산\n2     국내산\n3     국내산\n4     원양산\n5     국내산\n6     국내산\n7     수입산\n8     국내산\n9     국내산\n10    국내산\n11    국내산\n12    국내산\n13    수입산\nName: 원산지, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'원산지'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴     0.000000\n분류     0.000000\n가격     0.071429\n칼로리    0.142857\n맵기     0.000000\n원산지    0.214286\ndtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    NaN   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움  NaN\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n5      김밥   분식  3500.0  320.0  안매움  국내산\n6      순대   분식  4000.0  390.0  안매움  NaN\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움  NaN\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "원산지\n국내산    8\n모름     3\n수입산    2\n원양산    1\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:clean": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1     False\n2     False\n3     False\n4     False\n5      True\n6     False\n7     False\n8     False\n9     False\n10    False\n11    False\n12    False\n13    False\ndtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(1)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    NaN   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움  NaN\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n6      순대   분식  4000.0  390.0  안매움  NaN\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움  NaN\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(13, 6)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움  국내산\n1   치즈떡볶이   분식  5500.0    NaN   보통  국내산\n2     라볶이   분식  6000.0  650.0   매움  NaN\n3      김밥   분식  3500.0  320.0  안매움  국내산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n6      순대   분식  4000.0  390.0  안매움  NaN\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움  국내산\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n10    쿨피스   음료  1500.0  140.0  안매움  NaN\n11     식혜   음료  2000.0  150.0  안매움  국내산\n12    붕어빵  디저트  2000.0  230.0  안매움  국내산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n6      순대   분식  4000.0  390.0  안매움  NaN\n9    제육덮밥   식사  8000.0    NaN   매움  국내산\n11     식혜   음료  2000.0  150.0  안매움  국내산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n10     식혜   음료  2000.0  150.0  안매움  국내산\n11    붕어빵  디저트  2000.0  230.0  안매움  국내산\n12  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0      매움\n1      보통\n2      매움\n3     0단계\n4     0단계\n5     0단계\n6     0단계\n7      보통\n8     0단계\n9      매움\n10    0단계\n11    0단계\n12    0단계\n13    0단계\nName: 맵기, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     2\n1     1\n2     2\n3     0\n4     0\n5     0\n6     0\n7     1\n8     0\n9     2\n10    0\n11    0\n12    0\n13    0\nName: 맵기, dtype: int64",
+   "error": null,
+   "warnings": [
+    "FutureWarning: Downcasting behavior in `replace` is deprecated and will be removed in a future version. To retain the old behavior, explicitly call `result.infer_objects(copy=False)`. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`"
+   ]
+  },
+  {
+   "stdout": "",
+   "display": "0     2\n1     1\n2     2\n3     0\n4     0\n5     0\n6     0\n7     1\n8     0\n9     2\n10    0\n11    0\n12    0\n13    0\nName: 맵기, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       메뉴   분류      가격    칼로리   맵기  원산지\n0     떡볶이   분식  4500.0  480.0   매움   국산\n1   치즈떡볶이   분식  5500.0    NaN   보통   국산\n2     라볶이   분식  6000.0  650.0   매움  NaN\n3      김밥   분식  3500.0  320.0  안매움   국산\n4    참치김밥   분식  4500.0  410.0  안매움  원양산\n5      김밥   분식  3500.0  320.0  안매움   국산\n6      순대   분식  4000.0  390.0  안매움  NaN\n7      라면   식사  4000.0  500.0   보통  수입산\n8     돈가스   식사  8500.0  890.0  안매움   국산\n9    제육덮밥   식사  8000.0    NaN   매움   국산\n10    쿨피스   음료  1500.0  140.0  안매움  NaN\n11     식혜   음료  2000.0  150.0  안매움   국산\n12    붕어빵  디저트  2000.0  230.0  안매움   국산\n13  아이스크림  디저트     NaN  210.0  안매움  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     3\n1     5\n2     3\n3     2\n4     4\n5     2\n6     2\n7     2\n8     3\n9     4\n10    3\n11    2\n12    3\n13    5\nName: 메뉴, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     떡볶\n1     치즈\n2     라볶\n3     김밥\n4     참치\n5     김밥\n6     순대\n7     라면\n8     돈가\n9     제육\n10    쿨피\n11    식혜\n12    붕어\n13    아이\nName: 메뉴, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1     False\n2     False\n3      True\n4      True\n5      True\n6     False\n7     False\n8     False\n9     False\n10    False\n11    False\n12    False\n13    False\nName: 메뉴, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0          떡볶이\n1        치즈떡볶이\n2          라볶이\n3       GIMBAP\n4     참치GIMBAP\n5       GIMBAP\n6           순대\n7           라면\n8          돈가스\n9         제육덮밥\n10         쿨피스\n11          식혜\n12         붕어빵\n13       아이스크림\nName: 메뉴, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1      True\n2     False\n3     False\n4     False\n5     False\n6     False\n7     False\n8     False\n9     False\n10    False\n11    False\n12    False\n13    False\nName: 메뉴, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     True\n1     True\n2      NaN\n3     True\n4     True\n5     True\n6      NaN\n7     True\n8     True\n9     True\n10     NaN\n11    True\n12    True\n13    True\nName: 원산지, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    a\n1    B\n2    c\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    AB\n1    CD\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    ab\n1    cd\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    [2025, 03]\n1    [2024, 11]\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025\n1    2024\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "IntCastingNaNError",
+    "Cannot convert non-finite values (NA or inf) to integer"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "invalid literal for int() with base 10: '매움'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    1.0\n1    2.0\n2    NaN\ndtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     False\n1     False\n2     False\n3      True\n4      True\n5      True\n6     False\n7     False\n8     False\n9      True\n10    False\n11    False\n12    False\n13    False\nName: 메뉴, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     3\n1     5\n2     3\n3     2\n4     4\n5     2\n6     2\n7     2\n8     3\n9     4\n10    3\n11    2\n12    3\n13    5\nName: 메뉴, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     4500.0\n1     5500.0\n2     6000.0\n3     3500.0\n4     4500.0\n5     3500.0\n6     4000.0\n7     4000.0\n8     6000.0\n9     6000.0\n10    2000.0\n11    2000.0\n12    2000.0\n13       NaN\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:groupby": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트    2000.000000\n분식     4666.666667\n식사     6833.333333\n음료     1750.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트    1\n분식     6\n식사     3\n음료     2\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트     80\n분식     602\n식사     235\n음료      83\nName: 판매량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "              가격         칼로리       매운맛         판매량\n분류                                                \n디저트  2000.000000  230.000000  0.000000   80.000000\n분식   4666.666667  476.666667  0.833333  100.333333\n식사   6833.333333  723.333333  1.333333   78.333333\n음료   1750.000000  145.000000  0.000000   41.500000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       가격  칼로리\n분류            \n디저트  2000  230\n분식   6000  650\n식사   8500  890\n음료   2000  150",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            mean   max   min\n분류                          \n디저트  2000.000000  2000  2000\n분식   4666.666667  6000  3500\n식사   6833.333333  8500  4000\n음료   1750.000000  2000  1500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "              가격  판매량\n분류                   \n디저트  2000.000000   80\n분식   4666.666667  602\n식사   6833.333333  235\n음료   1750.000000   83",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n식사     6833.333333\n분식     4666.666667\n디저트    2000.000000\n음료     1750.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트    1\n분식     6\n식사     3\n음료     2\nName: 가격, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    분류  판매량\n0  디저트   80\n1   분식  602\n2   식사  235\n3   음료   83",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    분류  판매량\n0  디저트   80\n1   분식  602\n2   식사  235\n3   음료   83",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'식사'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류   매운맛\n디저트  0      1\n분식   0      3\n     1      1\n     2      2\n식사   0      1\n     1      1\n     3      1\n음료   0      2\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류   매운맛\n디저트  0       80\n분식   0      318\n     1       88\n     2      196\n식사   0       55\n     1      120\n     3       60\n음료   0       83\nName: 판매량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    분류  매운맛  판매량\n0  디저트    0   80\n1   분식    0  318\n2   분식    1   88\n3   분식    2  196\n4   식사    0   55\n5   식사    1  120\n6   식사    3   60\n7   음료    0   83",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "매운맛    0    1    2    3\n분류                     \n디저트  1.0  NaN  NaN  NaN\n분식   3.0  1.0  2.0  NaN\n식사   1.0  1.0  NaN  1.0\n음료   2.0  NaN  NaN  NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "매운맛  0  1  2  3\n분류             \n디저트  1  0  0  0\n분식   3  1  2  0\n식사   1  1  0  1\n음료   2  0  0  0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     4666.666667\n1     4666.666667\n2     4666.666667\n3     4666.666667\n4     4666.666667\n5     4666.666667\n6     6833.333333\n7     6833.333333\n8     6833.333333\n9     1750.000000\n10    1750.000000\n11    2000.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트     80\n분식     602\n식사     235\n음료      83\nName: 판매량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  가격  칼로리  매운맛  판매량\n분류                        \n디저트   1   1    1    1    1\n분식    6   6    6    6    6\n식사    3   3    3    3    3\n음료    2   2    2    2    2",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트    2000.0\n분식     4500.0\n식사     8000.0\n음료     1750.0\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "매운맛\n0    7\n1    2\n2    2\n3    1\nName: 메뉴, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n디저트    2000.0\n분식     4666.7\n식사     6833.3\n음료     1750.0\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(602)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            평균가격  총판매\n분류                   \n디저트  2000.000000   80\n분식   4666.666667  602\n식사   6833.333333  235\n음료   1750.000000   83",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:pivot": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   주문번호          날짜     시각    메뉴  수량    결제\n0     1  2025-03-03  12:26    김밥   2    카드\n1     2  2025-03-03  13:35    라면   2    카드\n2     3  2025-03-03  13:39  참치김밥   1    카드\n3     4  2025-03-03  15:23   붕어빵   3  간편결제\n4     5  2025-03-03  16:19    김밥   2    카드",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       수량\n메뉴       \n김밥     17\n돈가스     2\n떡볶이    12\n라면     10\n라볶이     8\n붕어빵    15\n순대      8\n식혜      3\n제육덮밥   10\n참치김밥   15\n치즈떡볶이   9\n쿨피스     8",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제          간편결제    카드   현금\n날짜                         \n2025-03-03   5.0   9.0  2.0\n2025-03-04   5.0   7.0  NaN\n2025-03-05   9.0   6.0  5.0\n2025-03-06   5.0   9.0  3.0\n2025-03-07   1.0  18.0  3.0\n2025-03-08   6.0  10.0  2.0\n2025-03-09   3.0   6.0  3.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제          간편결제  카드  현금\n날짜                      \n2025-03-03     5   9   2\n2025-03-04     5   7   0\n2025-03-05     9   6   5\n2025-03-06     5   9   3\n2025-03-07     1  18   3\n2025-03-08     6  10   2\n2025-03-09     3   6   3",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      수량\n결제      \n간편결제  21\n카드    45\n현금    10",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            수량\n결제            \n간편결제  1.619048\n카드    1.444444\n현금    1.800000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제          간편결제  카드  현금\n날짜                      \n2025-03-03     3   6   1\n2025-03-04     4   5   0\n2025-03-05     5   4   2\n2025-03-06     2   7   1\n2025-03-07     1  11   2\n2025-03-08     4   7   2\n2025-03-09     2   5   2",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴\n김밥      17\n붕어빵     15\n참치김밥    15\nName: 수량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜          결제  \n2025-03-03  간편결제     5\n            카드       9\n            현금       2\n2025-03-04  간편결제     5\n            카드       7\n2025-03-05  간편결제     9\n            카드       6\n            현금       5\n2025-03-06  간편결제     5\n            카드       9\n            현금       3\n2025-03-07  간편결제     1\n            카드      18\n            현금       3\n2025-03-08  간편결제     6\n            카드      10\n            현금       2\n2025-03-09  간편결제     3\n            카드       6\n            현금       3\nName: 수량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제\n카드      45\n간편결제    21\n현금      10\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜\n2025-03-03     9\n2025-03-04     7\n2025-03-05     6\n2025-03-06     9\n2025-03-07    18\n2025-03-08    10\n2025-03-09     6\nName: 카드, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜\n2025-03-03    16\n2025-03-04    12\n2025-03-05    20\n2025-03-06    17\n2025-03-07    22\n2025-03-08    18\n2025-03-09    12\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "결제\n간편결제    34\n카드      65\n현금      18\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['간편결제', '카드', '현금'], dtype='object', name='결제')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index(['2025-03-03', '2025-03-04', '2025-03-05', '2025-03-06', '2025-03-07',\n       '2025-03-08', '2025-03-09'],\n      dtype='object', name='날짜')",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:dates": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "주문번호             int64\n날짜      datetime64[ns]\n시각              object\n메뉴              object\n수량               int64\n결제              object\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   주문번호         날짜     시각    메뉴  수량  결제\n0     1 2025-03-03  12:26    김밥   2  카드\n1     2 2025-03-03  13:35    라면   2  카드\n2     3 2025-03-03  13:39  참치김밥   1  카드",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     3\n1     3\n2     3\n3     3\n4     3\n     ..\n71    9\n72    9\n73    9\n74    9\n75    9\nName: 날짜, Length: 76, dtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     0\n1     0\n2     0\n3     0\n4     0\n     ..\n71    6\n72    6\n73    6\n74    6\n75    6\nName: 날짜, Length: 76, dtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     Monday\n1     Monday\n2     Monday\n3     Monday\n4     Monday\n       ...  \n71    Sunday\n72    Sunday\n73    Sunday\n74    Sunday\n75    Sunday\nName: 날짜, Length: 76, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    3\n1    3\n2    3\nName: 날짜, dtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025\n1    2025\nName: 날짜, dtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "요일\n0    16\n1    12\n2    20\n3    17\n4    22\n5    18\n6    12\nName: 수량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    주문번호         날짜     시각     메뉴  수량    결제  요일\n54    55 2025-03-08  11:21     식혜   1    현금   5\n55    56 2025-03-08  11:48     김밥   2  간편결제   5\n56    57 2025-03-08  11:50    떡볶이   1  간편결제   5\n57    58 2025-03-08  12:08    떡볶이   1    카드   5\n58    59 2025-03-08  14:42    라볶이   2    카드   5\n59    60 2025-03-08  14:49     김밥   2  간편결제   5\n60    61 2025-03-08  15:17   참치김밥   1    카드   5\n61    62 2025-03-08  16:00     라면   1    현금   5\n62    63 2025-03-08  16:16   참치김밥   2    카드   5\n63    64 2025-03-08  16:18     순대   1    카드   5\n64    65 2025-03-08  18:41    떡볶이   1  간편결제   5\n65    66 2025-03-08  19:01     김밥   2    카드   5\n66    67 2025-03-08  19:55    떡볶이   1    카드   5\n67    68 2025-03-09  11:46     순대   1    카드   6\n68    69 2025-03-09  12:53    라볶이   1  간편결제   6\n69    70 2025-03-09  13:51  치즈떡볶이   1    카드   6\n70    71 2025-03-09  14:07    쿨피스   2    카드   6\n71    72 2025-03-09  15:03     김밥   1    카드   6\n72    73 2025-03-09  16:29    쿨피스   1    현금   6\n73    74 2025-03-09  17:25    돈가스   1    카드   6\n74    75 2025-03-09  18:12  치즈떡볶이   2    현금   6\n75    76 2025-03-09  19:58    쿨피스   2  간편결제   6",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-03 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-09 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-03 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "2025-03-03 00:00:00\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-03 12:26:00\n1   2025-03-03 13:35:00\n2   2025-03-03 13:39:00\nName: 일시, dtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    12\n1    13\n2    13\nName: 일시, dtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "일시\n11    13\n12    14\n13    17\n14    17\n15    11\n16    14\n17     9\n18    12\n19    10\nName: 수량, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 76 entries, 0 to 75\nData columns (total 8 columns):\n #   Column  Non-Null Count  Dtype         \n---  ------  --------------  -----         \n 0   주문번호    76 non-null     int64         \n 1   날짜      76 non-null     datetime64[ns]\n 2   시각      76 non-null     object        \n 3   메뉴      76 non-null     object        \n 4   수량      76 non-null     int64         \n 5   결제      76 non-null     object        \n 6   요일      76 non-null     int32         \n 7   일시      76 non-null     datetime64[ns]\ndtypes: datetime64[ns](2), int32(1), int64(2), object(3)\nmemory usage: 4.6+ KB\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜\n0    10\n1     9\n2    11\n3    10\n4    14\n5    13\n6     9\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    1\n1    1\nName: 날짜, dtype: int32",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:weather": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "           날짜  평균기온  최고기온  최저기온  강수량  평균풍속\n0  2024-01-01   0.1   6.0  -4.2  0.0   7.0\n1  2024-01-02   3.2   7.8  -1.9  0.0   6.8\n2  2024-01-03   0.4   6.9  -5.4  0.0   4.6\n3  2024-01-04  -0.1   5.2  -5.8  0.0   4.8\n4  2024-01-05  -0.0   5.9  -5.4  3.7   4.4",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(366, 6)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "             평균기온        최고기온        최저기온         강수량        평균풍속\ncount  366.000000  366.000000  366.000000  366.000000  361.000000\nmean    14.333607   19.867760    9.400273    2.544536    3.752078\nstd      8.545161    8.680865    8.603244    7.171187    1.372650\nmin     -3.600000    0.400000   -8.200000    0.000000    0.400000\n25%      6.550000   12.250000    1.425000    0.000000    2.800000\n50%     14.550000   20.100000    9.750000    0.000000    3.800000\n75%     22.175000   27.900000   17.000000    0.875000    4.700000\nmax     30.300000   38.000000   24.400000   78.900000    7.400000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜      0\n평균기온    0\n최고기온    0\n최저기온    0\n강수량     0\n평균풍속    5\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "             날짜  평균기온  최고기온  최저기온  강수량  평균풍속\n44   2024-02-14   2.2   7.9  -4.3  7.3   NaN\n122  2024-05-02  13.0  17.5   9.6  0.0   NaN\n123  2024-05-03  19.4  24.3  14.4  0.0   NaN\n232  2024-08-20  22.8  28.7  17.3  0.0   NaN\n311  2024-11-07  11.0  17.5   5.8  0.0   NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "월\n1     5.103226\n2     4.914286\n3     3.222581\n4     3.060000\n5     3.520690\n6     3.276667\n7     3.300000\n8     3.030000\n9     3.150000\n10    3.303226\n11    4.475862\n12    4.732258\nName: 평균풍속, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    평균기온  강수량\n월            \n1    2.4  1.7\n2    3.9  1.7\n3    7.9  0.8\n4   13.5  2.2\n5   19.4  0.9\n6   24.2  4.8\n7   25.5  6.1\n8   24.2  7.3\n9   20.8  0.6\n10  15.1  1.4\n11   9.8  1.2\n12   5.0  1.7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "월\n1      53.1\n2      47.9\n3      23.8\n4      66.3\n5      28.3\n6     144.4\n7     188.7\n8     226.1\n9      18.9\n10     44.9\n11     34.9\n12     54.0\nName: 강수량, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int32(1)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜      2024-07-13 00:00:00\n평균기온                   30.3\n최고기온                   38.0\n최저기온                   23.8\n강수량                    18.9\n평균풍속                    2.5\n월                         7\nName: 194, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            날짜  평균기온  최고기온  최저기온   강수량  평균풍속  월\n117 2024-04-27  11.6  17.3   6.5  42.7   3.4  4\n188 2024-07-07  23.0  28.7  18.6  36.3   4.7  7\n189 2024-07-08  26.2  32.7  20.7  32.6   3.2  7\n213 2024-08-01  28.8  34.1  23.5  37.4   2.1  8\n219 2024-08-07  24.0  30.7  16.5  34.5   4.8  8\n222 2024-08-10  26.0  31.8  20.5  78.9   1.4  8",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            날짜  평균기온  최고기온  최저기온   강수량  평균풍속  월\n194 2024-07-13  30.3  38.0  23.8  18.9   2.5  7\n243 2024-08-31  27.6  35.6  24.1   0.0   3.8  8",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜      datetime64[ns]\n평균기온           float64\n최고기온           float64\n최저기온           float64\n강수량            float64\n평균풍속           float64\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "            평균기온  최고기온  최저기온  강수량  평균풍속\n날짜                                     \n2024-01-01   0.1   6.0  -4.2  0.0   7.0\n2024-01-02   3.2   7.8  -1.9  0.0   6.8\n2024-01-03   0.4   6.9  -5.4  0.0   4.6",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:concat": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0   김밥  3500\n1   라면  4000\n0   순대  4000\n1  쿨피스  1500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0   김밥  3500\n1   라면  4000\n2   순대  4000\n3  쿨피스  1500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   메뉴    가격   메뉴    가격\n0  김밥  3500   순대  4000\n1  라면  4000  쿨피스  1500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴      가격    칼로리\n0   김밥  3500.0    NaN\n1   라면  4000.0    NaN\n0  떡볶이     NaN  480.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴\n0   김밥\n1   라면\n0  떡볶이",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴      가격    칼로리\n0   김밥  3500.0    NaN\n1   라면  4000.0    NaN\n2  떡볶이     NaN  480.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(5, 3)",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:merge": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량    가격\n0   김밥   3  3500\n1   라면   2  4000\n2  떡볶이   4  4500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량      가격\n0   김밥   3  3500.0\n1   라면   2  4000.0\n2   순대   1     NaN\n3  떡볶이   4  4500.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴   수량    가격\n0   김밥  3.0  3500\n1   라면  2.0  4000\n2  떡볶이  4.0  4500\n3   식혜  NaN  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴   수량      가격\n0   김밥  3.0  3500.0\n1  떡볶이  4.0  4500.0\n2   라면  2.0  4000.0\n3   순대  1.0     NaN\n4   식혜  NaN  2000.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량    가격\n0   김밥   3  3500\n1   라면   2  4000\n2  떡볶이   4  4500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량    가격\n0   김밥   3  3500\n1   라면   2  4000\n2  떡볶이   4  4500",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴  수량      가격       매출\n0   김밥   3  3500.0  10500.0\n1   라면   2  4000.0   8000.0\n2   순대   1     NaN      NaN\n3  떡볶이   4  4500.0  18000.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   키  값_x  값_y\n0  a    1   10\n1  b    2   20",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   키  값_왼  값_오\n0  a    1   10\n1  b    2   20",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  코드 이름 번호  점수\n0  a  가  a   7\n1  b  나  b   5",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴   수량      가격      _merge\n0   김밥  3.0  3500.0        both\n1  떡볶이  4.0  4500.0        both\n2   라면  2.0  4000.0        both\n3   순대  1.0     NaN   left_only\n4   식혜  NaN  2000.0  right_only",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:bike": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   대여번호              대여일시   대여소    구   회원  나이대  이용시간  이동거리    기온\n0     1  2025-05-01 06:05   시청앞  중앙구  정기권  20대    16   3.4  15.0\n1     2  2025-05-01 06:15   도서관  배움구  정기권  40대    13   2.7  13.1\n2     3  2025-05-01 07:30   도서관  배움구  정기권  20대    11   2.8  15.1\n3     4  2025-05-01 07:32  강변공원  물빛구  정기권  30대     9   1.8  15.3\n4     5  2025-05-01 07:46   도서관  배움구  정기권  60대    23   NaN  14.4",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(303, 9)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 303 entries, 0 to 302\nData columns (total 9 columns):\n #   Column  Non-Null Count  Dtype  \n---  ------  --------------  -----  \n 0   대여번호    303 non-null    int64  \n 1   대여일시    303 non-null    object \n 2   대여소     303 non-null    object \n 3   구       303 non-null    object \n 4   회원      303 non-null    object \n 5   나이대     298 non-null    object \n 6   이용시간    303 non-null    int64  \n 7   이동거리    291 non-null    float64\n 8   기온      303 non-null    float64\ndtypes: float64(2), int64(2), object(5)\nmemory usage: 21.4+ KB\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "대여번호     0\n대여일시     0\n대여소      0\n구        0\n회원       0\n나이대      5\n이용시간     0\n이동거리    12\n기온       0\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(3)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "(300, 9)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(4.55)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "구\n물빛구    5.093590\n배움구    4.900000\n중앙구    5.037615\nName: 이동거리, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'물빛구'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "100",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "대여일시\nThursday     52\nSunday       46\nTuesday      43\nSaturday     42\nFriday       41\nMonday       41\nWednesday    35\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "14.0 32.0 18.0\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(4)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(44)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "175    520\n187    412\n38     365\n224    298\n222     54\n77      49\n137     49\n125     45\n140     45\n192     44\nName: 이용시간, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.int64(4)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "회원    일일권   정기권\n나이대            \n10대  34.2  41.6\n20대  32.8  21.4\n30대  31.5  19.1\n40대  31.8  16.4\n50대  34.4  33.0\n60대  31.6  40.7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "27\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "2.97\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "나이대\n20대    78\n30대    78\n40대    46\n60대    34\n50대    31\n10대    28\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'20대'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "회원\n일일권    32.495050\n정기권    25.055276\nName: 이용시간, dtype: float64",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:errors": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "'없는열'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "100"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "IndexError",
+    "single positional indexer is out-of-bounds"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "<bound method NDFrame.head of        메뉴   분류    가격  칼로리  매운맛  판매량\n0     떡볶이   분식  4500  480    2  132\n1   치즈떡볶이   분식  5500  610    1   88\n2     라볶이   분식  6000  650    2   64\n3      김밥   분식  3500  320    0  150\n4    참치김밥   분식  4500  410    0   97\n5      순대   분식  4000  390    0   71\n6      라면   식사  4000  500    1  120\n7     돈가스   식사  8500  890    0   55\n8    제육덮밥   식사  8000  780    3   60\n9     쿨피스   음료  1500  140    0   45\n10     식혜   음료  2000  150    0   38\n11    붕어빵  디저트  2000  230    0   80>",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "TypeError",
+    "DataFrame.sort_values() missing 1 required positional argument: 'by'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "'없음'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "<bound method Series.mean of 0     4500\n1     5500\n2     6000\n3     3500\n4     4500\n5     4000\n6     4000\n7     8500\n8     8000\n9     1500\n10    2000\n11    2000\nName: 가격, dtype: int64>",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "TypeError",
+    "Could not convert string '떡볶이치즈떡볶이라볶이김밥참치김밥순대라면돈가스제육덮밥쿨피스식혜붕어빵' to numeric"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "TypeError",
+    "Could not convert ['떡볶이치즈떡볶이라볶이김밥참치김밥순대라면돈가스제육덮밥쿨피스식혜붕어빵' '분식분식분식분식분식분식식사식사식사음료음료디저트'] to numeric"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "FileNotFoundError",
+    "[Errno 2] No such file or directory: '없는파일.csv'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "0"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "'김밥'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "TypeError",
+    "Cannot index by location index with a non-integer key"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "\"['가격'] not found in axis\""
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "KeyError",
+    "'없음'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    분식\n1    분식\nName: 분류, dtype: object",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:notes_frame": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "snack        :  <class 'pandas.core.frame.DataFrame'>\nsnack['가격']  :  <class 'pandas.core.series.Series'>\nsnack[['가격']]:  <class 'pandas.core.frame.DataFrame'>\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0  떡꼬치  1500\n1   어묵  1000\n2   튀김  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   Unnamed: 0   메뉴    가격\n0           0  떡꼬치  1500\n1           1   어묵  1000\n2           2   튀김  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0  떡꼬치  1500\n1   어묵  1000\n2   튀김  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "TypeError",
+    "'tuple' object is not callable"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "3",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  원산지\n0  떡꼬치  1500  NaN\n1   어묵  1000  NaN\n2   튀김  2000  NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  원산지\n0  떡꼬치  1500  국내산\n1   어묵  1000  NaN\n2   튀김  2000  NaN",
+   "error": null,
+   "warnings": [
+    "FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '국내산' has dtype incompatible with float64, please explicitly cast to a compatible dtype first."
+   ]
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  원산지\n0  떡꼬치  1500  국내산\n1   어묵  1000  수입산\n2   튀김  2000  수입산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  원산지\n0  떡꼬치  1500  국내산\n1   어묵  1000  수입산\n2   튀김  2000  수입산\n3   순대  3000  국내산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  원산지\n0  떡꼬치  1500  국내산\n1   어묵  1000  수입산\n2   튀김  2000  수입산\n3   순대  3000  국내산\n4  김말이  1200  NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴    가격  원산지\n3     순대  3000  국내산\n4    김말이  1200  NaN\n특별  컵떡볶이  2500  국내산",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Index([0, 1, 2, 3, 4], dtype='object')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격  원산지    행사가\n0  떡꼬치  1500  국내산    NaN\n1   어묵  1000  수입산  800.0\n2   튀김  2000  수입산  800.0\n3   순대  3000  국내산    NaN\n4  김말이  1200  NaN    NaN",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴      object\n가격       int64\n원산지     object\n행사가    float64\ndtype: object",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:notes_str": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    떡볶이 세트\n1     튀김 모둠\n2    순대 한접시\nName: A, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    떡볶이 단품\n1     튀김 모둠\n2    순대 한접시\nName: A, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0        단품\n1     튀김 모둠\n2    순대 한접시\nName: A, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    100\n1     20\n2     30\nName: B, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "AttributeError",
+    "Can only use .str accessor with string values!"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    [떡볶이, 세트]\n1     [튀김, 모둠]\n2    [순대, 한접시]\nName: A, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "['떡볶이', '세트']",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    떡볶이\n1     튀김\n2     순대\nName: A, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     세트\n1     모둠\n2    한접시\nName: A, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     True\n1    False\n2    False\nName: A, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    False\n1     True\n2    False\nName: A, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    6\n1    5\n2    6\nName: A, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "False",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     ab cd\n1     ab cd\n2    ab cd \nName: C, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     AB CD\n1     AB CD\n2    AB CD \nName: C, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    False\n1     True\n2    False\nName: C, dtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    abcd\n1    abcd\n2    abcd\nName: C, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    b \n1    B \n2    b \nName: C, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "1     AB CD\n2    ab cd \nName: C, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    ab cd\n1    AB CD\n2    ab cd\nName: C, dtype: object",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:notes_func": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "4\n4\n4\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "가격     54000\n칼로리     5550\n매운맛        9\n판매량     1000\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     5114\n1     6199\n2     6716\n3     3970\n4     5007\n5     4461\n6     4621\n7     9445\n8     8843\n9     1685\n10    2188\n11    2310\ndtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "평균값:  4500.0\n중앙값:  4250.0\n표준편차:  2225.8808266718715\n분산:  4954545.454545454\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "np.float64(3125.0)",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "     메뉴  분류    가격  칼로리  매운맛  판매량\n2   라볶이  분식  6000  650    2   64\n7   돈가스  식사  8500  890    0   55\n8  제육덮밥  식사  8000  780    3   60",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'분식'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    분식\nName: 분류, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'김밥'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "메뉴       김밥\n분류       분식\n가격     3500\n칼로리     320\n매운맛       0\n판매량     150\nName: 3, dtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      메뉴  칼로리 칼로리등급\n0    떡볶이  480    낮음\n1  치즈떡볶이  610    높음\n2    라볶이  650    높음\n3     김밥  320    낮음",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "가격\n보통    6\n비쌈    3\n쌈     3\nName: count, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    No\n1    No\n2    No\nName: 칼로리, dtype: object",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:notes_melt": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  동아리 variable  value\n0  코딩      1학기     12\n1  로봇      1학기      8\n2  방송      1학기     10\n3  코딩      2학기     15\n4  로봇      2학기      9\n5  방송      2학기      7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  동아리 variable  value\n0  코딩      2학기     15\n1  로봇      2학기      9\n2  방송      2학기      7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  동아리   학기  인원\n0  코딩  1학기  12\n1  로봇  1학기   8\n2  방송  1학기  10\n3  코딩  2학기  15\n4  로봇  2학기   9\n5  방송  2학기   7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "  동아리 variable  value\n0  코딩      1학기     12\n1  로봇      1학기      8\n2  방송      1학기     10\n3  코딩      2학기     15\n4  로봇      2학기      9\n5  방송      2학기      7",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   학년 동아리  계절  행사수\n0   1  코딩   봄    3\n1   1  로봇   봄    4\n2   2  방송   봄    5\n3   1  코딩  가을    6\n4   1  로봇  가을    7\n5   2  방송  가을    8",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:notes_group": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   분류 크기      가격\n0  분식  소  3000.0\n1  음료  소     NaN\n2  분식  대  4500.0\n3  음료  대     NaN\n4  분식  대  5000.0\n5  음료  대  2500.0\n6  분식  소     NaN\n7  음료  소  1800.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    4166.666667\n1    2150.000000\n2    4166.666667\n3    2150.000000\n4    4166.666667\n5    2150.000000\n6    4166.666667\n7    2150.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류\n분식    4166.666667\n음료    2150.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    3000.000000\n1    2150.000000\n2    4500.000000\n3    2150.000000\n4    5000.000000\n5    2500.000000\n6    4166.666667\n7    1800.000000\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    3000.0\n1    1800.0\n2    4750.0\n3    2500.0\n4    4750.0\n5    2500.0\n6    3000.0\n7    1800.0\nName: 가격, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   분류 크기      가격\n0  분식  소  3000.0\n1  음료  소  1800.0\n2  분식  대  4500.0\n3  음료  대  2500.0\n4  분식  대  5000.0\n5  음료  대  2500.0\n6  분식  소  3000.0\n7  음료  소  1800.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "           가격\n분류 크기        \n분식 대   4750.0\n   소   3000.0\n음료 대   2500.0\n   소   1800.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   분류 크기      가격\n0  분식  대  4750.0\n1  분식  소  3000.0\n2  음료  대  2500.0\n3  음료  소  1800.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "        가격\n분류        \n분식  3875.0\n음료  2150.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "크기       대       소\n분류                \n분식  9500.0  6000.0\n음료  5000.0  3600.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "분류      분식      음료\n크기                \n대   9500.0  5000.0\n소   6000.0  3600.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "크기       대       소\n분류                \n분식  9500.0  6000.0\n음료  5000.0  3600.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "      mean      sum\n분류                 \n분식  3875.0  15500.0\n음료  2150.0   8600.0",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:notes_merge": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0   김밥  3500\n1   라면  4000\n2   순대  4000\n3  쿨피스  1500\n4   식혜  2000\n5  붕어빵  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    메뉴    가격\n0   김밥  3500\n1   라면  4000\n2   순대  4000\n0  쿨피스  1500\n1   식혜  2000\n2  붕어빵  2000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   메뉴    가격  칼로리\n0  김밥  3500  320\n1  라면  4000  500\n2  순대  4000  390",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "   메뉴    가격   음료  음료가격\n0  김밥  3500  쿨피스  1500\n1  라면  4000   식혜  2000\n2  순대  4000  붕어빵  2000",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:notes_pivot": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "    수량\n구분    \n과자  11\n음료  22",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "크기       대    소\n구분 포장          \n과자 낱개  4.0  1.0\n   묶음  NaN  6.0\n음료 낱개  4.0  5.0\n   묶음  7.0  6.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "크기     대  소\n구분 포장      \n과자 낱개  4  1\n   묶음  0  6\n음료 낱개  4  5\n   묶음  7  6",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       금액        수량\n구분 크기              \n과자 대    9  2.000000\n   소   13  2.333333\n음료 대   15  5.500000\n   소   17  5.500000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "크기    대         소\n구분               \n과자  4.5  4.333333\n음료  7.5  8.500000",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "       금액  수량\n구분 크기        \n과자 대    9   4\n   소   13   7\n음료 대   15  11\n   소   17  11",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:ts_formats": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-07 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "2025-03-07 00:00:00\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\n1   2025-03-08\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\n1   2025-03-08\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\n1   2025-03-08\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\n1   2025-03-08\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07 18:05:20\n1   2025-03-08 09:30:00\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\n1   2025-03-08\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07 18:05:20\n1   2025-03-08 09:30:00\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07 18:05:20\n1   2025-03-08 09:30:00\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": [
+    "UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format."
+   ]
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07 18:05:20\n1   2025-03-08 09:30:00\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "DateParseError",
+    "hour must be in 0..23: 2025:03:07, at position 0"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\n1          NaT\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\n1   2025-03-08\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:ts_parts": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0     5\n1    30\n2     0\ndtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    20\n1    45\n2     0\ndtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    4\n1    5\n2    0\ndtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    False\n1     True\n2    False\ndtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025-03\n1    2025-03\n2    2025-03\ndtype: period[M]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025Q1\n1    2025Q1\n2    2025Q1\ndtype: period[Q-DEC]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025-03-07\n1    2025-03-08\n2    2025-03-10\ndtype: period[D]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025\n1    2025\n2    2025\ndtype: period[Y-DEC]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "0    2025-03\n1    2025-03\n2    2025-03\ndtype: period[M]\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025-03-07\n1    2025-03-08\n2    2025-03-10\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025-03\n1    2025-03\n2    2025-03\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    18\n1     9\n2    12\ndtype: int32",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:ts_delta": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-06-14 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('99 days 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "99 days 00:00:00\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('4 days 04:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('24 days 03:03:03')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "                   주문                  도착            걸린시간\n0 2025-03-07 18:05:20 2025-03-07 18:41:05 0 days 00:35:45\n1 2025-03-07 19:10:00 2025-03-07 19:52:30 0 days 00:42:30\n2 2025-03-08 12:30:10 2025-03-08 13:01:40 0 days 00:31:30",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   0 days 00:35:45\n1   0 days 00:42:30\n2   0 days 00:31:30\nName: 걸린시간, dtype: timedelta64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2145.0\n1    2550.0\n2    1890.0\nName: 걸린시간, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    35.75\n1    42.50\n2    31.50\nName: 걸린시간, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2145\n1    2550\n2    1890\nName: 걸린시간, dtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    0\n1    0\n2    0\nName: 걸린시간, dtype: int64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "주문       datetime64[ns]\n도착       datetime64[ns]\n걸린시간    timedelta64[ns]\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07 19:05:20\n1   2025-03-07 20:10:00\n2   2025-03-08 13:30:10\nName: 주문, dtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07 18:11:05\n1   2025-03-07 19:22:30\n2   2025-03-08 12:31:40\nName: 도착, dtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('0 days 00:36:35')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('0 days 00:42:30')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('0 days 18:56:20')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 3 entries, 0 to 2\nData columns (total 3 columns):\n #   Column  Non-Null Count  Dtype          \n---  ------  --------------  -----          \n 0   주문      3 non-null      datetime64[ns] \n 1   도착      3 non-null      datetime64[ns] \n 2   걸린시간    3 non-null      timedelta64[ns]\ndtypes: datetime64[ns](2), timedelta64[ns](1)\nmemory usage: 204.0 bytes\n",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "5",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "2",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "4",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    36.0\n1    42.0\n2    32.0\nName: 걸린시간, dtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('99 days 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "99",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0      NaT\n1   2 days\ndtype: timedelta64[ns]",
+   "error": null,
+   "warnings": []
+  }
+ ],
+ "probe:ts_more": [
+  {
+   "stdout": "",
+   "display": null,
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    2025-03-07 18:00\n1    2025-03-08 09:00\ndtype: period[h]",
+   "error": null,
+   "warnings": [
+    "FutureWarning: 'H' is deprecated and will be removed in a future version, please use 'h' instead."
+   ]
+  },
+  {
+   "stdout": "",
+   "display": "0    2025\n1    2025\ndtype: period[Y-DEC]",
+   "error": null,
+   "warnings": [
+    "FutureWarning: 'A' is deprecated and will be removed in a future version, please use 'Y' instead."
+   ]
+  },
+  {
+   "stdout": "",
+   "display": "0    2025-03-07 18:00\n1    2025-03-08 09:00\ndtype: period[h]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "ValueError",
+    "time data \"모름\" doesn't match format \"%Y-%m-%d\", at position 1. You might want to try:"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "DateParseError",
+    "Unknown datetime string format, unable to parse: 모름, at position 0"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   2025-03-07 18:05:20\n1   2025-03-08 09:30:45\ndtype: datetime64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": null,
+   "error": [
+    "AttributeError",
+    "'DatetimeProperties' object has no attribute 'total_seconds'"
+   ],
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "          날짜  평균기온\n0 2024-01-01   0.1\n1 2024-01-02   3.2\n2 2024-01-03   0.4",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "날짜      datetime64[ns]\n평균기온           float64\ndtype: object",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0   6 days 12:05:20\ndtype: timedelta64[ns]",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    43520\ndtype: int32",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    561920.0\ndtype: float64",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    True\ndtype: bool",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('0 days 01:30:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timedelta('0 days 00:01:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "86400.0",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "Timestamp('2025-03-06 00:00:00')",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "4",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "'Friday'",
+   "error": null,
+   "warnings": []
+  },
+  {
+   "stdout": "",
+   "display": "0    NaN\n1    3.0\n2    5.0\ndtype: float64",
+   "error": null,
+   "warnings": []
+  }
+ ]
+}
