@@ -8,6 +8,9 @@ const size = Buffer.byteLength(html);
 if (size < 200000) bad.push(`dist/index.html 이 너무 작습니다(${size}바이트) — 개발용 껍데기가 아닌지 확인`);
 const marks = (html.match(/티쳐무/g) ?? []).length;
 if (marks < 3) bad.push(`저작권 표시(티쳐무)가 ${marks}번뿐입니다 — 3번 이상(HTML 주석·배너·푸터)이어야 합니다`);
+// ⚠ 배너는 통째로 본다 — 첫 줄은 CSS·HTML 머리 주석과 겹쳐, Vite 8 이 스크립트 배너를 지워도 통과했다(2026-11-09 postBanner 로 고침)
+const BANNER = "/*! 판다스 실습실 · © 2026 티쳐무 · 모든 권리 보유 · 학교 수업 목적으로만 이용해 주세요 */";
+if (!html.includes(BANNER)) bad.push('스크립트 /*! 배너가 지워졌습니다 — vite.config.js 의 output.postBanner 를 보세요(Vite 8 은 banner 를 압축에서 지웁니다)');
 if (/<script[^>]+src=|<link[^>]+href="https?:/.test(html)) bad.push('바깥 자원(script src · link href)을 부릅니다');
 if (!existsSync(new URL('../dist/cheatsheet.html', import.meta.url))) bad.push('dist/cheatsheet.html 이 없습니다');
 if (bad.length) { console.error('❌ 빌드 점검 실패\n' + bad.join('\n')); process.exit(1); }
